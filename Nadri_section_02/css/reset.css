@@ -20,7 +20,17 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	line-height: 1;
+    width:100%;
+    font-family: Arial; '나눔고딕';
 }
+a{
+    text-decoration: none;
+    font-style: normal;
+    
+}
+
+
+
 ol, ul {
 	list-style: none;
 }
