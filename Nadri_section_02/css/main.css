@@ -43,7 +43,6 @@
            padding: 10px;
            position: relative;
            line-height: 30px;
-          
         }
 
         .btn_txt{
@@ -51,9 +50,12 @@
         }
         
         .main_menu_img ul{
-            position: absolute;
-            overflow: hidden;
-    
+             min-width: 360px; 
+             max-width:1320px; 
+             margin:0 auto; 
+             overflow:hidden; 
+             display: flex;
+             position:absolute;
         }
         
         .main_menu_img ul li{
@@ -215,15 +217,24 @@
  
 
         /*---------------.banner_box-------------------*/
-
-        
-
         .about_nadri_nav_title{
+            min-height: 450px;
+            max-height: 500px;
             width: 100%;
+            height: 490px;
             max-width: 1000px;
             overflow: hidden;
-            padding: 50px;
             margin: 0 auto;
+            /*padding: 40px;*/
+            
+            
+
+            /*min-width: 360px; 
+             max-width:1320px; 
+             margin:0 auto; 
+             overflow:hidden; 
+             display: flex;
+             position:absolute;*/
             
         }
        
@@ -231,6 +242,7 @@
             display: flex;
             margin: 30px;
             align-items: center;
+            
         }
        .box01_img{
            min-width:200px; 
@@ -265,7 +277,26 @@
             text-align: left;
             margin-left: 40px;
         }
+
+        .box03_img{
+            min-width:200px; 
+            height: 200px;
+            background: url(../img/layer-27.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
         
+        .box03_txt{
+            width: 100%;
+            float: right;
+            line-height: 30px;
+            text-align: left;
+            margin-left: 40px;
+        }
+
+
+
+
 /*-----------------------.sub_bottom------------------------*/
         .sub_bottom{
             width: 100%;
@@ -299,12 +330,14 @@
         }
          .bottom_img{
             position: relative;
+             
        }
 
         .bottom-box ul{
-            overflow: hidden;
-           
-             
+           overflow: hidden;
+           display: inline-flex;
+           max-width: 1900px;
+           width: 100%;    
         }
         
         .bottom-box ul li{
@@ -316,6 +349,7 @@
         .bottom-box ul li:nth-child(3n){float: right;
         opacity: 0.5;}
        
+
         .bottom_txt{
             background-color: #333; 
             opacity: 0.7;
@@ -344,20 +378,19 @@
            left: 50%;
            transform: translateX(-50%);
            width: 1000px;
+           display: contents;
         }
         
         .bottom-right-btn{
            left:0;
            position: absolute;
-           margin-top: 250px;
-          
-        
+           margin: 220px 0 0 500px;
         }
         
         .bottom-left-btn{
             right: 0;
             position: absolute;
-            margin-top: 250px; 
+            margin: 220px 500px 0  0; 
         }
 
     /*--------------------aside------------------------*/
