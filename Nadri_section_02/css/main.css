@@ -1,175 +1,192 @@
-        
-        #contents{
-           max-width: 100%;
-           width:1920px;
-           height: 1120px;
-           background: url(../img/bg.png) no-repeat;
-           margin: 0 auto;
-        }
+html,body{
+        width: 100%;
+    
+}
+.wrapper{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+}
 
-        .main_menu_box{
-           position: absolute;
-           margin-top: 1200px;
-        }
-        .main_banner{
-           position:absolute; 
-           left: 50%;
-           transform: translateX(-70%);
-           margin-top: 500px;
-        }
-        .main_menu_text{
-            display: inline;
-            text-align: center;;
-            font-family: 'Nanum Brush Script', cursive;
-        }
-        
-        .main_menu_text > h2{
-            font-size:3.6rem;
-            font-weight:bold;
-            color: #786c60;
-        }
-        
-        .main_menu_text > h2 > span{
-            color:#f37537;
-            font-size:3.6rem;
-        }
+.main_silde_banner{
+        width: 100%;
+        max-width: 1920px;
+        height: 800px;
+        background: url(../img/bg.png) no-repeat center center;}
 
-        .main_menu_text > p{
-            font-family: 'Nanum Myeongjo', serif;
-            font-size: 1.6rem;
-            margin:14px 0 47px 0;
-            letter-spacing:1px;
-            color: #786c60;
-        }
-        
-        .main_menu_img{
-           display: flex;
-           text-align: center;
-           justify-content: center;
-           padding: 10px;
-           position: relative;
-           line-height: 30px;
-           margin-left: 25px;
-        }
+.main_silde_banner .inside{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 200px;
+}
 
-        .btn_txt{
-            text-align: right;
-        }
-        
-        .main_menu_img ul{
-             min-width: 360px; 
-             max-width:1170px; 
-             margin:0 auto; 
-             overflow:hidden; 
-             display: flex;
-             position:absolute;
-        }
-        
-        .main_menu_img ul li{
-            float: left;
-            width: 300px;
-            margin-left: 26px;
-            
-        }
+.section1{
+        width: 100%;
+        max-width: 1100px;
+        margin: 100px auto;
+}
 
-        
-        .main_btn{
-            text-decoration: none;
-            padding: 2px;
-            font-size: 0.9rem;
-            font-family: 'Nanum Myeongjo', serif;
-            font-weight: 800;
-            margin-right: 20px;
-            border: 2px solid #999;
-            background: #fff;
-            color: #786c60;
-        }
+.section1 .head{
+        width: 100%;
+        text-align: center;
+        font-family: 'Nanum Brush Script', cursive;
+}
 
-        .main_menu_bar dt{
-            padding: 10px;
-            font-size: 3rem;
-            font-weight: bold;
-            color: #786c60;
-            border-bottom: 4px solid #f48219;
-            font-family: 'Nanum Brush Script', cursive;
-        }
-         
-        .main_menu_bar dd{
-            font-size: 1.5rem;
-            margin-top: 10px;
-            font-family: 'Nanum Myeongjo', serif;
-            color: #786c60;
-        }
+.section1 .head h1{
+         font-size:3.6rem;
+         font-weight:bold;
+         color: #786c60;
+}
 
-        .main_menu_btn{
-           position: relative;
-        }
-        
-        .right_btn{
-            left:0;
-            position: absolute;
-            margin-top: 100px;
-            margin-left: 300px;
-           
-        }
-        
-        .left_btn{
-            right: 0;
-            position: absolute;
-            margin-top: 100px;
-            margin-right: 250px;
-        }
-        
-      
-            
-        .main_title{
-            background: url(../img/layer-22.png);
+.section1 .head h1 span{
+        font-size:3.6rem;
+        font-weight:bold;
+        color: orange;
+}
+
+.section1 .head p{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 1.6rem;
+        color: #786c60;
+        margin-top: 20px;
+}
+.section1 .head .content_box{
+    width: 100%;
+    max-width: 1980px;
+}
+
+.section1 ul{
+        width: 100%;
+        max-width: 1250px;
+        display: flex;
+        position: relative;
+        margin-top:50px;
+        overflow: hidden;
+}
+
+.section1 ul li{
+        width: 100%;
+        margin-right: 25px;
+}
+
+.section1 ul li:last-child{
+        margin-right: 0;
+}
+
+.section1 ul li .content{
+        width: 100%;
+}
+
+.section1 ul li .content .head_img_box{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+}
+
+.section1 ul li .content .head_img_box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.section1 ul li .content .head_text_box{
+        width: 100%;
+        text-align: center;
+}
+.section1 ul li .content .head_text_box h1{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 30px;
+        color: #786c60;
+        font-family: 'Nanum Brush Script', cursive;
+}
+.section1 ul li .content .head_text_box .menu_bar{
+        width: 100%;
+        height: 4px;
+        background: orange;
+        margin-top: 10px;
+}
+
+.section1 ul li .content .head_text_box p{
+        font-size: 1.5rem;
+        margin-top: 10px;
+        line-height: 30px;
+        font-family: 'Nanum Myeongjo', serif;
+        color: #786c60;
+}
+.head_btn_txt a{
+        padding: 6px;
+        font-family: 'Nanum Myeongjo', serif;
+        text-align: center;
+        margin: 20px 0 0 208px;
+        background-color: #fff;
+        display: block;
+        border: 2px solid #786c60;
+       /*align-items: center;
+        display: flex;
+        height: 20px; */
+    
+}
+
+.head_button{
+        position: relative;
+    
+}
+
+.head_button .head_right_btn{
+        right:0;
+        position: absolute;
+        margin-right: -100px;
+        bottom: 100px;
+}
+
+ .head_button .head_left_btn{
+        left: 0;
+        position: absolute;
+        margin-left: -100px;
+        bottom: 100px;
+       
+}
+
+.section2 .nadri_banner{
+        width: 100%;
+        max-width: 1920px;
+        height: 250px;
+        background: url(../img/layer-22.png)no-repeat     center center;
+}
+
+.section2 .nadri_banner h1{
+        padding-top: 90px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Nanum Myeongjo', serif;
+        color: #faf3e1;
+}
+
+.section2 .nadri_banner p{
+        font-size: 1.6rem;
+        font-family: 'Nanum Gothic', sans-serif;
+        margin: 20px;
+        text-align: center;
+        line-height: 20px;
+        color: #c4b79e;
+}
+
+.section3{
+            max-width: 1350px;
             width: 100%;
-            height: 250px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            margin-top: 470px;
-        }
-        
-        .title_img{
-            text-align: center;
-            padding-top: 100px;
-            
-        }
-        .title_img h2{
-            /*font-size: 1.875rem;*/
-            font-size: 3rem;
-            font-family: 'Nanum Myeongjo', serif;
-            color: #faf3e1;
-        }
-        .title_img p{
-            font-size: 1.6rem;
-            font-family: 'Nanum Gothic', sans-serif;
-            margin: 20px;
-            line-height: 20px;
-            color: #c4b79e;
-        }
-/*---------------------------------------------------*/        
-        .about_nadri_nav_box{
-            background: url(../img/paper.png);
-            width: 1920px;
-            line-height: 593px;
-        }
-
-        .about_nadri_banner{
-            max-width:1350px;
             margin: 0 auto;
             margin-top: 40px;
             position: relative;
         }
 
-
-        .about_nadri_banner_box{
+.about_nadri_banner_box{
             display: flex;
+   
         }
 
-        .about_nadri_nav{
+.about_nadri_nav{
             text-align: center;
             position:absolute;
             bottom: 30px;
@@ -177,14 +194,13 @@
             left: 50%;
         }
    
-        
-        .about_nadri_txt ul{
+.about_nadri_txt ul{
             overflow: hidden;
             position:absolute;
             margin: 30px 0;
         }
 
-        .about_nadri_txt ul li{
+.about_nadri_txt ul li{
             position: relative;
             margin-bottom: 10px;
             font-family: 'Nanum Myeongjo', serif;
@@ -193,11 +209,11 @@
          
         }
 
-        .about_nadri_txt ul li:last-child{
+.about_nadri_txt ul li:last-child{
             margin-bottom: 0;
         }
 
-        .about_nadri_info_btn {
+.about_nadri_info_btn {
             width: 210px;
             height: 40px;
             text-align: center;
@@ -208,18 +224,18 @@
             border: 2px solid #c4b79e;
             }
 
-        .about_nadri_info_btn a{
+.about_nadri_info_btn a{
             color:#c4b79e;
             }
 
 
-        .about_nadri_img{
+.about_nadri_img{
             text-align:right;
             width: 100%; 
-            margin-left: 200px;
+            margin-left: 150px; /*찾았다!!!!*/
         }
 
-        .about_nadri_nav_txt h1{
+.about_nadri_nav_txt h1{
         font-size:3.6rem;
         font-family: 'Nanum Brush Script', cursive;
         line-height: 30px;
@@ -227,273 +243,273 @@
         color: #786c60;
         }
 
-        .about_nadri_nav_txt h1 span{
+.about_nadri_nav_txt h1 span{
         font-size: 3.6rem;
         color: #f37537; 
         }
 
-        .about_nadri_nav_txt p{
+.about_nadri_nav_txt p{
         font-size: 1.6rem;
         margin: 14px;
         font-family: 'Nanum Myeongjo', serif;
         color: #786c60;
         }
 
-        .about_nadri_btn{
+.about_nadri_btn{
          margin-top: 44px;
         }
-        .about_txt_line{
+
+.about_txt_line{
             width: 65px;
             height: 4px;
             background: #f48219;
-            display: flex;
-            
+            display: flex; 
         }
  
 
-        /*---------------.banner_box-------------------*/
-        .about_nadri_nav_title{
-            min-height: 450px;
-            max-height: 500px;
+.section4{
+            background: url(../img/paper.png);
             width: 100%;
-            height: 490px;
+            max-width: 1920px;
+        }
+.about_nadri_nav_title{
             max-width: 1000px;
+            max-height: 580px;
+            width: 100%;
             overflow: hidden;
             margin: 0 auto;
         }
        
-        .about_nadri_nav_box ul li{
+.section4 ul li{
             display: flex;
-            margin: 30px;
-            align-items: center;
-            
+            margin: 30px; 
         }
-       .box01_img{
+.box01_img{
+           min-width:200px; 
+           height: 200px;
+           background: url(../img/cb-036113669.png);
+           background-repeat: no-repeat;
+           display: inline-block; 
+        }
+        
+.box01_txt{
+            font-family: 'Nanum Myeongjo', serif;
+            line-height: 20px;
+            margin-left: 50px;
+            float: right;
+            text-align:left;
+        }
+
+.box02_img{
+            min-width:200px; 
+            height: 200px;
+            background: url(../img/layer-27.png);
+            background-repeat: no-repeat;
+            display: inline-block; 
+        }
+      
+.box02_txt{
+            font-family: 'Nanum Myeongjo', serif;
+            float: right;
+            line-height: 20px;
+            margin-left: 50px;
+            text-align: left; 
+        }
+
+.box03_img{
            min-width:200px; 
            height: 200px;
            background: url(../img/cb-036113669.png);
            background-repeat: no-repeat;
            display: inline-block;
+            
         }
         
-        .box01_txt{
+.box03_txt{
             font-family: 'Nanum Myeongjo', serif;
             line-height: 20px;
+            margin-left: 50px;
             float: right;
             text-align:left;
-            margin-left: 240px;
-            position: absolute;  
         }
-       
-        .box01_txt h2{
+
+.box01_txt h2{
             padding: 10px 0;
             font-size: 2rem;
             font-weight: 600;
         }
-         .box01_txt h3{
+.box01_txt h3{
             font-size: 1.4rem;
             font-weight: 800;
             color:#f37537;
         }
-        .box01_txt a{
+.box01_txt a{
             font-size: 1.6rem;
             font-weight: 800;
             color:#f37537;
         }
-        .box01_txt p{
+.box01_txt p{
             font-size: 1.6rem;
             padding: 22px 0;
             font-weight: 600
         }
-        .box02_txt h2{
+.box02_txt h2{
             padding: 10px 0;
             font-size: 2rem;
             font-weight: 600;
         }
-        .box02_txt h3{
+.box02_txt h3{
             font-size: 1.4rem;
             font-weight: 800;
             color:#f37537;
         }
-        .box02_txt a{
+.box02_txt a{
             font-size: 1.6rem;
             font-weight: 800;
             color:#f37537;
         }
-         .box02_txt p{
+.box02_txt p{
             font-size: 1.6rem;
             padding: 22px 0;
             font-weight: 600
         }
-        .box03_txt h2{
+.box03_txt h2{
             padding: 10px 0;
             font-size: 2rem;
             font-weight: 600;
         }
-        .box03_txt h3{
+.box03_txt h3{
             font-size: 1.4rem;
             font-weight: 800;
             color:#f37537;
         }
-        .box03_txt a{
+
+.box03_txt a{
             font-size: 1.6rem;
             font-weight: 800;
             color:#f37537;
         }
-        .box03_txt p{
+.box03_txt p{
             font-size: 1.6rem;
             padding: 22px 0;
             font-weight: 600
         }
 
 
-        .box02_img{
-            min-width:200px; 
-            height: 200px;
-            background: url(../img/layer-27.png);
-            background-repeat: no-repeat;
-            display: inline-block;
-        }
-      
-        .box02_txt{
-            font-family: 'Nanum Myeongjo', serif;
-            width: 100%;
-            float: right;
-            line-height: 20px;
-            text-align: left;
-            margin-left: 40px;
-        }
 
-        .box03_img{
-            min-width:200px; 
-            height: 200px;
-            background: url(../img/layer-27.png);
-            background-repeat: no-repeat;
-            display: inline-block;
-        }    
-        .box03_txt{
-            font-family: 'Nanum Myeongjo', serif;
-            width: 100%;
-            float: right;
-            line-height: 20px;
-            text-align: left;
-            margin-left: 40px;
-        }
-
-
-
-
-/*-----------------------.sub_bottom------------------------*/
-        .sub_bottom{
+.section5{
             width: 100%;
             /*background: red;*/
             padding: 50px 0 0 0;
         }
         
-        .bottom_title{
+.bottom_title{
             width: inherit;
             text-align: center;
         }
         
-        .bottom_title h2{
+.bottom_title h2{
             font-family: 'Nanum Brush Script', cursive;
             font-size: 3.6rem;
             color: #786c60;
         }
 
-        .bottom_title h2 span{
+.bottom_title h2 span{
             font-size: 3.6rem;
             color:#f37537;
         }
         
-        .bottom_title p{
+.bottom_title p{
             font-family: 'Nanum Myeongjo', serif;
             margin: 14px 0 44px 0;
             font-size: 1.6rem;
             color: #786c60;
         }
         
-        .bottom-box{
-            width: 1920px;
-            margin: 0 auto;
-            
-             
-           
-        }
-         .bottom_img{
-            position: relative;
-             
-       }
+.bottom-box{
+            position: absolute;
+}
 
-        .bottom-box ul{
+.bottom-box ul{
            overflow: hidden;
            display: inline-flex;
            max-width: 1900px;
            width: 100%;    
         }
+.bottom_img{
+            position: relative;
+       }
+
+.bottom-box ul{
+           max-width: 1920px;
+           width: 100%;
+           overflow: hidden;
+        }
         
-        .bottom-box ul li{
+.bottom-box ul li{
             float: left;
            
         }
-        .bottom-box ul li:first-child{
+.bottom-box ul li:first-child{
             opacity: 0.5;}
       
-        .bottom-box ul li:nth-child(3n){
+.bottom-box ul li:nth-child(3n){
             float: right;
             opacity: 0.5;}
 
-        .bottom_txt{
+.bottom_txt{
             background-color: #333; 
             opacity: 0.7;
             line-height: 35px;
             border: 1px solid #444;
             position: absolute;
             bottom: 0;
-            width: 100%
+            width: 100%;
         }        
 
-         .bottom_subbox{
+.bottom_subbox{
              color: #fbb813;
              padding: 10px;
              box-sizing: border-box;}
               
         
-        .bottom_txt h3{
+.bottom_txt h3{
             font-family: 'Nanum Myeongjo', serif;
             font-weight: 800;
             font-size: 2.3rem;
         }
         
-        .bottom_txt address{
+.bottom_txt address{
             color: #faf3e1;
             font-family: 'Nanum Myeongjo', serif;
             font-weight: 800;
             font-size: 1.9rem;
         }
         
-        .bottom-btn{
-           position: relative;
+.bottom-btn{
+           position: absolute;
+           display: flex;
            left: 50%;
            transform: translateX(-50%);
-           width: 1000px;
-           display: contents;
+           margin: 200px auto;
         }
         
-        .bottom-right-btn{
-           left:0;
-           position: absolute;
-           margin: 220px 0 0 500px;
+.bottom-right-btn{
+         position: absolute;
+         left: 400px;
+   
+           
         }
         
-        .bottom-left-btn{
-            right: 0;
-            position: absolute;
-            margin: 220px 500px 0  0; 
+.bottom-left-btn{
+         position: absolute;
+         right: 400px;
+            
         }
 
-    /*--------------------aside------------------------*/
-        .quick_menu{
+
+/*-------------------------aside---------------------*/
+    .quick_menu{
             font-family: 'Nanum Brush Script', cursive;
             display: block;
             position: fixed;
@@ -638,16 +654,17 @@
             padding-left: 10px;
           } 
         .quick_menu_nav05 > .right{
-         width: 30px;
-         height: 30px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         background: #f48219;
-         padding: 10px;
+             width: 30px;
+             height: 30px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             background: #f48219;
+             padding: 10px;
         }
     
 
 @media screen and (min-width: 1920px) {
 #aside {left: 50%; margin-left: 600px;}
 }
+
