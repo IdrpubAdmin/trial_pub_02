@@ -1,176 +1,188 @@
 html,body{
-        width: 100%;
+            width: 100%;
     
 }
+.inner {
+            width:1200px;
+            margin-right:auto;
+            margin-left:auto;
+}
 .wrapper{
-        width: 100%;
-        max-width: 1920px;
-        margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
 }
 
 .main_silde_banner{
-        width: 100%;
-        max-width: 1920px;
-        height: 800px;
-        background: url(../img/bg.png) no-repeat center center;}
+            width: 100%;
+            max-width: 1920px;
+            height: 800px;
+            background: url(../img/bg.png) no-repeat center center;}
 
 .main_silde_banner .inside{
-        width: 100%;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding-top: 200px;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-top: 200px;
 }
 
 .section1{
-        width: 100%;
-        max-width: 1100px;
-        margin: 100px auto;
+            width: 100%;
+            margin: 100px auto;
 }
 
-.section1 .head{
-        width: 100%;
-        text-align: center;
-        font-family: 'Nanum Brush Script', cursive;
+.section1 .menu_head {
+            width: 100%;
+            text-align: center;
+            font-family: 'Nanum Brush Script', cursive;
 }
 
-.section1 .head h1{
-         font-size:3.6rem;
-         font-weight:bold;
-         color: #786c60;
+.section1 .menu_head h1{
+             font-size:3.6rem;
+             font-weight:bold;
+             color: #786c60;
 }
 
-.section1 .head h1 span{
-        font-size:3.6rem;
-        font-weight:bold;
-        color: orange;
+.section1 .menu_head h1 span{
+            font-size:3.6rem;
+            font-weight:bold;
+            color: orange;
 }
 
-.section1 .head p{
-        font-family: 'Nanum Myeongjo', serif;
-        font-size: 1.6rem;
-        color: #786c60;
-        margin-top: 20px;
-}
-.section1 .head .content_box{
-    width: 100%;
-    max-width: 1980px;
+.section1 .menu_head p{
+            font-family: 'Nanum Myeongjo', serif;
+            font-size: 1.6rem;
+            color: #786c60;
+            margin-top: 20px;
 }
 
-.section1 ul{
-        width: 100%;
-        max-width: 1250px;
-        display: flex;
-        position: relative;
-        margin-top:50px;
-        overflow: hidden;
+.section1 .menu_ul_box {
+            position:relative;
+            width:100%;
+}    
+.section1 .menu_ul_box .inner {
+            width:1180px;
+            overflow:hidden;    
+}
+.section1 .menu_ul_box ul{
+            position: relative;
+            width:calc((270px + 25px) * 5 );
+            margin-top:50px;
 }
 
-.section1 ul li{
-        width: 100%;
-        margin-right: 25px;
+.section1 .menu_ul_box ul li{
+            display:inline-block;
+            width: 270px;
+            margin-right: 25px;
 }
 
-.section1 ul li:last-child{
-        margin-right: 0;
+.section1 .menu_ul_box ul li:last-child{
+            margin-right: 0;
 }
 
-.section1 ul li .content{
-        width: 100%;
+.section1 .menu_ul_box ul li .menu_item{
+            width: 100%;
 }
 
-.section1 ul li .content .head_img_box{
-        width: 100%;
-        height: 200px;
-        overflow: hidden;
+.section1 .menu_ul_box ul li .menu_item .head_img_box{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
 }
 
-.section1 ul li .content .head_img_box img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+.section1 .menu_ul_box ul li .menu_item .head_img_box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
 }
 
-.section1 ul li .content .head_text_box{
-        width: 100%;
-        text-align: center;
+.section1 .menu_ul_box ul li .menu_item .head_text_box{
+            width: 100%;
+            text-align: center;
 }
-.section1 ul li .content .head_text_box h1{
-        font-size: 3rem;
-        font-weight: bold;
-        margin-top: 30px;
-        color: #786c60;
-        font-family: 'Nanum Brush Script', cursive;
+.section1 .menu_ul_box ul li .menu_item .head_text_box h1{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #786c60;
+            font-family: 'Nanum Brush Script', cursive;
 }
-.section1 ul li .content .head_text_box .menu_bar{
-        width: 100%;
-        height: 4px;
-        background: orange;
-        margin-top: 10px;
+.section1 .menu_ul_box ul li .menu_item .head_text_box .menu_bar{
+            width: 100%;
+            height: 4px;
+            background: orange;
+            margin-top: 10px;
 }
 
-.section1 ul li .content .head_text_box p{
-        font-size: 1.5rem;
-        margin-top: 10px;
-        line-height: 30px;
-        font-family: 'Nanum Myeongjo', serif;
-        color: #786c60;
+.section1 .menu_ul_box ul li .menu_item .head_text_box p{
+            font-size: 1.5rem;
+            margin-top: 10px;
+            line-height: 30px;
+            font-family: 'Nanum Myeongjo', serif;
+            color: #786c60;
 }
+
 .head_btn_txt a{
-        padding: 6px;
-        font-family: 'Nanum Myeongjo', serif;
-        text-align: center;
-        margin: 20px 0 0 208px;
-        background-color: #fff;
-        display: block;
-        border: 2px solid #786c60;
+            font-size: 1rem;
+            padding: 6px;
+            color: #786c60;
+            font-family: 'Nanum Myeongjo', serif;
+            text-align: center;
+            margin: 20px 0 0 208px;
+            background-color: #fff;
+            display: block;
+            border: 2px solid #786c60;
        /*align-items: center;
         display: flex;
         height: 20px; */
     
 }
-
-.head_button{
-        position: relative;
-    
+.menu_ul_nav{
+            position: absolute;
+            top:105px;
+            left:0;
+            width:100%;
+}    
+.section1 .menu_ul_nav .inner {
+            overflow:inherit;
 }
 
-.head_button .head_right_btn{
-        right:0;
-        position: absolute;
-        margin-right: -100px;
-        bottom: 100px;
+.menu_ul_nav a{
+            display:inline-block;
+            width:46px;
+            height:86px;
 }
-
- .head_button .head_left_btn{
-        left: 0;
-        position: absolute;
-        margin-left: -100px;
-        bottom: 100px;
-       
+.head_right_btn {
+            float:right;
+            margin-right:-96px;
 }
+.head_left_btn {
+            float:left;
+            margin-left:-96px;
+}    
 
 .section2 .nadri_banner{
-        width: 100%;
-        max-width: 1920px;
-        height: 250px;
-        background: url(../img/layer-22.png)no-repeat     center center;
+            width: 100%;
+            max-width: 1920px;
+            height: 250px;
+            background: url(../img/layer-22.png)no-repeat     center center;
 }
 
 .section2 .nadri_banner h1{
-        padding-top: 90px;
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Nanum Myeongjo', serif;
-        color: #faf3e1;
+            padding-top: 90px;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Nanum Myeongjo', serif;
+            color: #faf3e1;
 }
 
 .section2 .nadri_banner p{
-        font-size: 1.6rem;
-        font-family: 'Nanum Gothic', sans-serif;
-        margin: 20px;
-        text-align: center;
-        line-height: 20px;
-        color: #c4b79e;
+            font-size: 1.6rem;
+            font-family: 'Nanum Gothic', sans-serif;
+            margin: 20px;
+            text-align: center;
+            line-height: 20px;
+            color: #c4b79e;
 }
 
 .section3{
@@ -266,7 +278,6 @@ html,body{
             display: flex; 
         }
  
-
 .section4{
             background: url(../img/paper.png);
             width: 100%;
@@ -274,7 +285,7 @@ html,body{
         }
 .about_nadri_nav_title{
             max-width: 1000px;
-            max-height: 580px;
+            max-height: 570px;
             width: 100%;
             overflow: hidden;
             margin: 0 auto;
@@ -284,6 +295,10 @@ html,body{
             display: flex;
             margin: 30px; 
         }
+.nav_title_box{
+            display:flex;
+}
+
 .box01_img{
            min-width:200px; 
            height: 200px;
@@ -395,12 +410,10 @@ html,body{
             font-weight: 600
         }
 
-
-
 .section5{
             width: 100%;
-            /*background: red;*/
             padding: 50px 0 0 0;
+            min-width: 1500px;
         }
         
 .bottom_title{
@@ -427,34 +440,28 @@ html,body{
         }
         
 .bottom-box{
-            position: absolute;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+.bottom-box ul{
+            width:calc(640px * 4);
+            margin-left:calc(((-640px * 3) + 100% ) / 2)
 }
 
-.bottom-box ul{
-           overflow: hidden;
-           display: inline-flex;
-           max-width: 1900px;
-           width: 100%;    
+.bottom-box ul li{
+            display: inline-block;
+            float: left;
         }
-.bottom_img{
-            position: relative;
-       }
 
-.bottom-box ul{
-           max-width: 1920px;
-           width: 100%;
-           overflow: hidden;
+.bottom-box ul li .bottom_img{
+            position: relative;
         }
         
-.bottom-box ul li{
-            float: left;
-           
-        }
 .bottom-box ul li:first-child{
             opacity: 0.5;}
       
 .bottom-box ul li:nth-child(3n){
-            float: right;
             opacity: 0.5;}
 
 .bottom_txt{
@@ -470,9 +477,9 @@ html,body{
 .bottom_subbox{
              color: #fbb813;
              padding: 10px;
-             box-sizing: border-box;}
-              
-        
+             box-sizing: border-box;
+        }
+                 
 .bottom_txt h3{
             font-family: 'Nanum Myeongjo', serif;
             font-weight: 800;
@@ -487,26 +494,153 @@ html,body{
         }
         
 .bottom-btn{
-           position: absolute;
-           display: flex;
-           left: 50%;
-           transform: translateX(-50%);
-           margin: 200px auto;
-        }
-        
-.bottom-right-btn{
-         position: absolute;
-         left: 400px;
-   
-           
-        }
-        
-.bottom-left-btn{
-         position: absolute;
-         right: 400px;
-            
+            position: relative;
+            top: 250px;
+            left: 0;
+            width: 640px;
+            margin: 0 auto;
         }
 
+.bottom-right-btn{
+             position: absolute;
+             right: 0;
+             margin-right: -70px;
+        }
+        
+.bottom-left-btn{        
+             position: absolute;
+             left: 0;
+             margin-left: -70px; 
+        }
+
+ #footers{
+            width: 100%;
+            background: url(../img/322-copy.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+
+.footer_main{
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+.footer_title{
+            width:inherit;
+            text-align: left;
+            display: flex;
+        }
+
+.footer_top{
+            float: left;
+            text-align:left;
+            margin: 50px 20px 30px 70px;
+        }
+.footer_txt{
+            display: block;
+        }
+
+.footer_txt >h1{
+            font-size: 5rem;
+            font-family: 'Nanum Brush Script', cursive;
+            color: #faf3e1;
+        }
+
+.footer_txt >p{
+            font-size: 2.5rem;
+            font-family: 'Nanum Brush Script', cursive;
+            color: #c4b79e;
+            padding: 10px;
+        }
+
+.footer_name{
+            margin-top: 50px;
+        }
+
+.footer_txt ul{
+            overflow: hidden;
+            position: absolute;
+            float: right;
+            text-align:left;
+            display: flex;
+        }
+
+.footer_txt ul li{
+            position: relative;
+            display: flex;
+            float: left;
+            box-sizing: border-box;
+        }
+
+.footer_txt ul li input{
+            padding: 16px 33px 13px 17px; 
+            text-align: left;
+            font-size: 1.6rem;
+            border-radius: 5px;
+        }
+/*.footer_txt ul li input:last-child{
+    text-align: center;
+    background-color: #ffbf43; 
+    border-radius: 10px;
+}*/
+.footer_btn li{
+            margin-top: 30px;
+            padding-right: 15px;
+            display: inline-block;
+            font-family: 'Nanum Myeongjo', serif;
+        }   
+
+.footer_btn li:first-child{
+            padding-left: 0;
+        }
+
+.footer_bottom ul li h1{
+            font-weight: 700;
+            font-size: 3.1rem;
+            margin-bottom: 45px;
+            color: #c4b79e;
+        }
+
+.footer_bottom ul li p{
+            font-size: 1.4rem;
+            line-height: 20px;
+            color: #999;
+        }
+
+.footer-line{
+             width: 100%;
+             max-width: 1920px;
+             height: 1px;
+             background:#fff;
+             left: 50%;
+             transform: translateX(-50%);
+             position: absolute;
+             margin-top:-6px ;
+        }
+
+.footer_bottom{
+            width: 1390px;
+            display: flex;
+            overflow: hidden;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+
+.footer_bottom > div{
+            float: left;
+            max-width: 300px;
+            text-align: left;
+        }
+
+.copyright{
+            font-size: 3rem;
+            text-align: center;
+            color: #fff;
+            margin: 73px 57px 0 73px;
+            padding: 50px 0;
+        }
 
 /*-------------------------aside---------------------*/
     .quick_menu{
