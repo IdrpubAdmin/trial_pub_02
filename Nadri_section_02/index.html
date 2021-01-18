@@ -28,9 +28,90 @@
     <div class="wrapper">
        <!--상단 이미지-->
         <div class="main_silde_banner">
-            <div class="inside">
-                <img src="img/section_top.png">
-            </div>
+          <!--header 부분-->
+            <header> 
+              <div class="container">
+                <div class="main_logo">
+                  <a href="#" class="main_title_logo">
+                     <img src="img/logo.png" alt="">
+                  </a>
+               </div>
+                   <nav>
+                       <ul>
+                           <li><a href="#">HOME</a></li>
+                           |
+                           <li><a href="#main">로그인</a></li>
+                           |
+                           <li><a href="#main1">고객센터</a></li>
+                       </ul>
+                   </nav>
+              </div>
+              
+                <div class="menu_hader_item">
+                  <div class="menu_hader_bax">
+                   <ul class="menu_hader_btn">
+                       <li>
+                       <img class="li_img" src="img/1-1.png" alt="">
+                       <a href="#">나드리김밥</a>
+                         <ul>
+                           <li><a href="#">나드리스토리 </a></li>
+                           <li><a href="#">CEO인사말 </a></li>
+                           <li><a href="#">CI/BI소개 </a></li>
+                           <li><a href="#">오시는길 </a></li>
+                         </ul>
+                       </li>
+
+                       <li>
+                       <img class="li_img" src="img/2-2.png" alt="">
+                       <a href="#">메뉴안내 </a>
+                        <ul>
+                           <li><a href="#">김밥류 </a></li>
+                           <li><a href="#">돈까스류 </a></li>
+                           <li><a href="#">식사류 </a></li>
+                           <li><a href="#">면류 </a></li>
+                           <li><a href="#">간식류 </a></li>
+                           <li><a href="#">계절메뉴 </a></li>
+                       </ul>
+                       </li>
+       
+                        <li>
+                        <img class="li_img" src="img/3-3.png" alt="">
+                        <a href="#">매장찾기 </a>
+                         <ul>
+                            <li><a href="#">매장찾기 </a></li>
+                            <li><a href="#">매장갤러리 </a></li>
+                        </ul>
+                        </li>
+       
+                         <li>
+                         <img class="li_img" src="img/4-4.png" alt="">
+                         <a href="#">프렌차이즈 </a>
+                          <ul>
+                           <li><a href="#">나드리경쟁력</a></li>
+                           <li><a href="#">가맹개설절차 </a></li>
+                           <li><a href="#">창업비용 </a></li>
+                           <li><a href="#">인테리어컨셉 </a></li>
+                         </ul>
+                         </li>
+          
+                          <li>
+                          <img class="li_img" src="img/5-5.png" alt="">
+                          <a href="#">커뮤니티 </a>
+                           <ul>
+                            <li><a href="#">나드리소식 </a></li>
+                            <li><a href="#">이벤트 </a></li>
+                            <li><a href="#">보도홍보자료 </a></li>
+                            <li><a href="#">고객센터 </a></li>
+                           </ul>
+                           </li>
+                       </ul>
+                  </div>
+                  
+                <div class="inside">
+                    <img src="img/section_top.png">
+                </div>
+               </div>
+        </header>
         </div>
          <!--상단 이미지-->
          <!--첫번째 section-->
@@ -335,53 +416,78 @@
                </div>
          <!--다섯번째 section-->
          <!--footer-->
-         <footer id="footers">
+        <footer id="footers">
            <div class="footer_main">
-                <div class="footer_title">
                     <div class="footer_top">
                         <div class="footer_img">
                             <img src="img/group-3.png" alt="">
                         </div>
-                    </div>
-                             <div class="footer_name">
+                            <div class="footer_name">
                                 <div class="footer_txt">
                                     <h1>나드리김밥 매장 검색</h1>
                                     <p>전국 나드리 매장을 한 눈에 만나보세요!</p>
                                         <ul class="footer_btn">
-                                            <li><input  type="text" value="지역선택" ></li>
+                                            <li><select id="uclass">
+                                                <option value="select"selected>지역선택</option>
+                                                <option value="">서울</option>
+                                                <option value="">수원</option>
+                                                <option value="">경기</option>
+                                                </select> 
+                                            </li>
+     
+                                            <li>
+                                            <select id="uclass">
+                                                <option value="select"selected>구/군선택</option>
+                                                <option value="">덕양구</option>
+                                                <option value="">일산동구</option>
+                                                <option value="">일산서구</option>
+                                                </select>
+                                            </li>
             
-                                            <li><input  type="text" value="구/군선택"></li>
-            
-                                            <li><input  type="text" value="운영현황"></li>
-            
-                                            <li><input type="text" value="SEARCH" ></li>
+                                            <li>
+                                            <select id="uclass">
+                                                <option value="select"selected>운영현황</option>
+                                                <option value="">정상</option>
+                                                <option value="">정상</option>
+                                                <option value="">휴일</option>
+                                                </select>
+                                            </li>
+     
+                                            <li><a href="#" type="button">SEARCH</a>
                                         </ul>
-                                </div>      
+                                </div>  
+                                             <div class="footer-line">&nbsp;</div>
                             </div>
-                    </div>
-                <div class="footer-line">&nbsp;</div>
+                </div>
                 
-           <div class="footer_bottom"> 
-                 <ul>
-                      <li><h1>Infomation</h1></li>
-                      <li><p>㈜ 나드리FS l 대표 조송연<br>
-                      사업자등록번호 : 306-02-81924</p></li>
-                 </ul>
-                  <ul>
-                      <li><h1>Locations</h1></li>
-                      <li><p>나드리 본사 : 대구광역시 달성군 유가면 테크노 중앙대로 2길 14<br>서울·경기지역본부 : 서울특별시 마포구 홍익로 2길 27-22 │ TEL 02-461-0363</p></li>
-                  </ul>
-                   <ul>
-                      <li><h1>Contact us</h1></li>
-                      <li><p>대표전화:1588-7178</p></li>
-                      <li><p>팩스:053-782-3959</p></li>
-                   </ul> 
-            </div>
-
-            <div class="copyright">
-                <address>Copyright&copy; NadriFS Inc. All Rights Reserved</address>
-            </div>
-       </div>
+                <div class="footer_bottom"> 
+                       <div class="footer_bottom_box">
+                           <ul>
+                          <li><h1>Infomation</h1></li>
+                          <li><p>㈜ 나드리FS l 대표 조송연<br>
+                             사업자등록번호 : 306-02-81924</p>
+                             
+                          </li>
+                        </ul>
+    
+                        <ul>
+                          <li><h1>Locations</h1></li>
+                          <li><p>나드리 본사 : 대구광역시 달성군 유가면 테크노 중앙대로 2길 14<br>서울·경기지역본부 : 서울특별시 마포구 홍익로 2길 27-22 │ TEL 02-461-0363</p>
+                          </li>
+                        </ul>
+      
+                       <ul>
+                          <li><h1>Contact us</h1></li>
+                          <li><p>대표전화:1588-7178</p></li>
+                          <li><p>팩스:053-782-3959</p></li>
+                       </ul> 
+                    </div>
+                </div>
+                       </div>
+                        
+                     <div class="copyright">
+                        <address>Copyright&copy; NadriFS IncAll Rights Reserved</address>
+                    </div>
     </footer>
          <!--footer-->
          

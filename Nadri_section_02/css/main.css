@@ -15,17 +15,146 @@ html,body{
 
 .main_silde_banner{
             width: 100%;
+            height: 1000px;
             max-width: 1920px;
-            height: 800px;
-            background: url(../img/bg.png) no-repeat center center;}
-
-.main_silde_banner .inside{
-            width: 100%;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding-top: 200px;
+            position: relative;
+            background: url(../img/bg.png) no-repeat top center;
 }
 
+ header{
+            color: #c4b79e;
+           
+}
+        
+.container{
+             width: 1200px;
+             max-width: 1920px;
+             margin: 0 auto;
+}
+        
+.main_logo{
+             width: 174px;                  
+             padding-top: 35px;
+             margin: 0 auto;
+                  
+}
+.main_title_logo{
+             float: left;
+  
+}
+
+header nav{
+             float: right;
+             padding-top: 40px;
+             padding-right: 50px;
+}
+        
+header nav ul{
+             overflow: hidden;
+}
+        
+header nav ul li{
+             display: inline;
+             padding: 10px;
+             font-size: 1.4rem;
+             font-family: 'Nanum Myeongjo', serif;
+             color: #faf3e1;
+             text-decoration: none;
+             font-style: normal;
+}
+        
+header nav ul li a{
+              color: #faf3e1;
+              text-decoration: none;
+              font-style: normal;
+}
+
+
+.menu_hader_item{
+              width: 100%;
+              text-align: center;
+              margin: 0 auto;
+}
+        
+.menu_hader_bax{
+              width: inherit;
+              background-color: #030302;
+              cursor: pointer;
+              opacity: 0.5;
+              display: inline-block;    
+              margin-top: 30px;
+
+}
+        
+.menu_hader_bax:hover{
+            height: 280px;
+}
+
+.menu_hader_btn{
+            display: inline-block;
+            margin: 5px 25px;
+}    
+
+.li_img{
+            float: left;
+            margin-top: 5px;
+}
+        
+.menu_hader_btn li{
+            display:block;
+            float: left;
+            position: relative;
+            margin: 1px 20px;
+            padding: 0;
+            width: 150px
+}
+ .menu_hader_btn li a{
+            display: block;
+            padding: 7px 8px;
+            font-family: 'Nanum Brush Script', cursive;
+            font-weight: bold;
+            font-size: 2.2rem;
+            color: #fff;
+}
+
+.menu_hader_btn ul li:hover > a{
+            color: #fbc027;
+                
+}
+
+/* .menu_hader_btn ul{
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 150px;
+            text-align: center;
+}*/
+.menu_hader_btn ul{
+            width: 150px;
+            position: absolute;
+            left: 30px;
+            top: 40px;
+            text-align: left;
+            opacity: 0;
+}
+
+.menu_hader_bax:hover ul{
+            opacity: 1;
+}
+
+  
+/*---------------------hader end--------------------------*/
+
+.main_silde_banner .inside{
+              position: absolute;
+              top: 450px;
+              left: 225px;
+              width: 100%;
+              max-width: 1100px;
+              margin: 0 auto;
+  
+}
+/*----------------------상단 이미지-------------------------*/
 .section1{
             width: 100%;
             margin: 100px auto;
@@ -512,137 +641,176 @@ html,body{
              left: 0;
              margin-left: -70px; 
         }
-
- #footers{
-            width: 100%;
-            background: url(../img/322-copy.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            position: relative;
+#footers{
+             width: 100%;
+             height: 643px;
+             background: url(../img/322-copy.png);
+             background-repeat: no-repeat;
+             background-position: center;
         }
 
 .footer_main{
-            max-width: 1400px;
-            width: 100%;
-            margin: 0 auto;
-        }
-
-.footer_title{
-            width:inherit;
-            text-align: left;
-            display: flex;
-        }
+             width: inherit;
+             margin: 0 auto;
+             max-width: 1400px;
+    
+}
 
 .footer_top{
-            float: left;
-            text-align:left;
-            margin: 50px 20px 30px 70px;
-        }
-.footer_txt{
-            display: block;
+             width: 1100px;
+             margin: 0 auto;
+             text-align: center;
+    
+}
+.footer_img{
+             width: 250px;
+             padding-top: 83px; 
+             float: left;
+}
+
+.footer_name{
+             width: 1200px;
+             padding: 60px;
+             text-align: left;
+             line-height: 50px;
+}
+.footer_txt ul{
+             overflow: hidden;
+}
+
+.footer_txt ul li{
+             float: left;
+             width: 200px;
+             margin-right: 15px;
+    
+  
+}
+.footer_main{
+             width: 100%;
+             max-width: 1400px;
+             margin: 0 auto;
+   
         }
 
+.footer_txt{
+             padding-top: 20px;
+        } 
+
 .footer_txt >h1{
-            font-size: 5rem;
-            font-family: 'Nanum Brush Script', cursive;
-            color: #faf3e1;
+             font-size: 4.6rem;
+             font-family: 'Nanum Brush Script', cursive;
+             color: #faf3e1;
         }
 
 .footer_txt >p{
-            font-size: 2.5rem;
-            font-family: 'Nanum Brush Script', cursive;
-            color: #c4b79e;
-            padding: 10px;
-        }
-
-.footer_name{
-            margin-top: 50px;
+             padding-bottom: 40px;
+             font-size: 2.5rem;
+             font-family: 'Nanum Brush Script', cursive;
+             color: #c4b79e;
+            
         }
 
 .footer_txt ul{
-            overflow: hidden;
-            position: absolute;
-            float: right;
-            text-align:left;
-            display: flex;
+             overflow: hidden;  
         }
 
 .footer_txt ul li{
-            position: relative;
-            display: flex;
-            float: left;
-            box-sizing: border-box;
+             display: flex;
         }
 
-.footer_txt ul li input{
-            padding: 16px 33px 13px 17px; 
-            text-align: left;
-            font-size: 1.6rem;
-            border-radius: 5px;
+#uclass{
+             width: 227px;
+             height: 45px;
+             border: 2px solid #7d7d7d;
+             color: #7d7d7d;
+             font-size: 1.6rem;
+             background: url(../img/layer-20-copy-2.png) no-repeat right 13px center;
+             background-color: #fff;
+             border-radius: 5px;
+             appearance:none;
+             -webkit-appearance:none;
+}
+#uclass::-ms-expand{
+             opacity: 0;}
+
+select{
+             padding: 10px;
+}
+
+.footer_txt ul li a{
+             width: 227px; 
+             height: 44px;
+             border-radius: 5px;
+             background-color: #ffbf43;
+             text-align: center;
+             font-size: 1.6rem;
+             font-weight: 800;
+             color: #fff;
+    
+            
         }
-/*.footer_txt ul li input:last-child{
-    text-align: center;
-    background-color: #ffbf43; 
-    border-radius: 10px;
-}*/
 .footer_btn li{
-            margin-top: 30px;
-            padding-right: 15px;
-            display: inline-block;
-            font-family: 'Nanum Myeongjo', serif;
+             font-family: 'Nanum Myeongjo', serif;
         }   
 
 .footer_btn li:first-child{
-            padding-left: 0;
-        }
-
-.footer_bottom ul li h1{
-            font-weight: 700;
-            font-size: 3.1rem;
-            margin-bottom: 45px;
-            color: #c4b79e;
-        }
-
-.footer_bottom ul li p{
-            font-size: 1.4rem;
-            line-height: 20px;
-            color: #999;
+             padding-left: 0;
         }
 
 .footer-line{
-             width: 100%;
+             position: absolute;
              max-width: 1920px;
+             width: 100%;
              height: 1px;
+             margin-top: 77px;
              background:#fff;
              left: 50%;
              transform: translateX(-50%);
-             position: absolute;
-             margin-top:-6px ;
         }
 
 .footer_bottom{
-            width: 1390px;
-            display: flex;
-            overflow: hidden;
-            margin-top: 50px;
-            justify-content: space-around;
-        }
+             width: 1055px;
+             margin: 0 auto;
+             margin-top: 30px;
+}
 
-.footer_bottom > div{
-            float: left;
-            max-width: 300px;
-            text-align: left;
-        }
+.footer_bottom ul{
+             overflow: hidden;
+             float: left;
+             margin: 0 auto;
+             margin-top: 44px;
+             padding-left: 100px;
+}
+
+.footer_bottom ul:first-child{
+             padding-left: 0;
+}
+
+.footer_bottom ul li h1{
+             font-size: 3.1rem;
+             padding-bottom: 45px;
+             color: #c4b79e;
+}
+
+.footer_bottom ul li p{
+             font-size: 1.4rem;
+             line-height: normal;
+             color: rgba(255, 255, 255, 0.9);
+
+}
 
 .copyright{
-            font-size: 3rem;
-            text-align: center;
-            color: #fff;
-            margin: 73px 57px 0 73px;
-            padding: 50px 0;
-        }
+             width: 1100px;
+             margin: 0 auto;
+             padding: 70px 0 60px;
+             font-size: 3rem;
+             text-align: center;
+             color: #fff;
+             clear: both; 
+}
 
-/*-------------------------aside---------------------*/
+
+/*-----------------aside---------------------*/
     .quick_menu{
             font-family: 'Nanum Brush Script', cursive;
             display: block;
