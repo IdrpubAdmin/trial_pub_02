@@ -22,12 +22,11 @@ html,body{
 }
 
  header{
-            color: #c4b79e;
-           
+            color: #c4b79e;       
 }
         
 .container{
-             width: 1200px;
+             width: 100%;
              max-width: 1920px;
              margin: 0 auto;
 }
@@ -38,15 +37,28 @@ html,body{
              margin: 0 auto;
                   
 }
+
+.main_logo img{
+             vertical-align: middle;
+}
+
 .main_title_logo{
-             float: left;
-  
+             float: left;  
 }
 
 header nav{
              float: right;
              padding-top: 40px;
              padding-right: 50px;
+}
+
+.nav_toggleBtn{
+            display:none;
+            position: absolute;
+            right: 32px;
+            top: 60px;
+            font-size: 30px;
+            color: #fff;
 }
         
 header nav ul{
@@ -71,9 +83,11 @@ header nav ul li a{
 
 
 .menu_hader_item{
+              position: relative;
               width: 100%;
               text-align: center;
               margin: 0 auto;
+              transition: all .3s;
 }
         
 .menu_hader_bax{
@@ -83,12 +97,12 @@ header nav ul li a{
               opacity: 0.5;
               display: inline-block;    
               margin-top: 30px;
-
 }
         
+/*
 .menu_hader_bax:hover{
-            height: 280px;
-}
+            height: 280px;}
+*/
 
 .menu_hader_btn{
             display: inline-block;
@@ -98,6 +112,11 @@ header nav ul li a{
 .li_img{
             float: left;
             margin-top: 5px;
+}
+
+.blind{
+            transition: all 0.5s;
+            width: 100%;
 }
         
 .menu_hader_btn li{
@@ -117,9 +136,35 @@ header nav ul li a{
             color: #fff;
 }
 
+.menu_hader_btn .menu_sub_box {
+            opacity: 0;
+} 
+
+.menu_hader_btn .menu_sub_box:after {
+            content: " ";
+            position:absolute;
+            z-index: -100; 
+            top: 48px;
+            left: -276px;
+            width: 931px;
+            height: 230px;
+            background-color: black;         
+}
+   
+.menu_hader_item:hover .menu_sub_box {
+            opacity: 1;
+}
+
 .menu_hader_btn ul li:hover > a{
-            color: #fbc027;
-                
+            color: #fbc027;       
+}
+
+.menu_hader_btn .blind{
+            position: absolute;
+             left: 30px;
+            top: 50px;
+            width: 150px;
+            text-align: left;
 }
 
 /* .menu_hader_btn ul{
@@ -128,20 +173,138 @@ header nav ul li a{
             top: 40px;
             width: 150px;
             text-align: center;
-}*/
-.menu_hader_btn ul{
-            width: 150px;
-            position: absolute;
-            left: 30px;
-            top: 40px;
-            text-align: left;
-            opacity: 0;
 }
-
 .menu_hader_bax:hover ul{
+    opacity: 1;
+}      
+.menu_hader_btn li:hover ul{
             opacity: 1;
 }
+*/
 
+@media screen and (max-width:1000px) {
+
+header{
+        position: static;
+        z-index: 0;
+}
+    
+.container{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 50;
+        width: 100%;
+        padding: 5px 0; 
+        background-color: #000;
+        opacity: 1;
+}
+    
+.main_logo{
+             overflow: hidden;
+             width: 107px;
+             margin: 0 auto;
+             margin-top: -50px;
+}
+    
+.container .main_logo > a{
+            display: block;
+}  
+
+.menu_hader_bax { 
+            position: fixed;
+            right: 0;
+            top: 13px;
+            bottom: 0;
+            overflow-y: auto;
+            opacity: 1;
+            width:60%;
+            height: 100% !important;
+            background-color:#030302;
+            z-index: 1;
+}
+    
+.nav_toggleBtn:hover .menu_hader_bax{
+            display: block;
+    }
+    
+.menu_hader_btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+}
+ 
+.main_silde_banner{
+            width: 100%;
+}
+    
+nav{
+            display: none;
+}
+
+.nav_toggleBtn{
+            display:block;
+            top: 5px;
+}
+
+.menu_hader_btn li{
+             display: inline-table;
+             float: none;
+             width: 100%;
+             border-top: 1px solid #d9ceba;
+} 
+    
+.menu_hader_btn li:last-child{
+        border-bottom: 1px solid  #d9ceba;
+    }
+
+ 
+.li_img{
+            padding-left: 30px; 
+}
+    
+.menu_hader_btn li a{
+            padding: 10px;
+            text-align: left;
+            padding-left: 100px;
+            width: 300px;
+            color: #d9ceba;
+}
+    
+.menu_sub_box .blind{
+            position: relative;
+            top: 0px;
+            left: -22px;
+}
+
+.menu_sub_box .blind li{
+            padding-left: 7rem;
+            width: 1000px;
+            border-bottom: 1px solid #d9ceba;
+ }
+    
+.main_logo img{
+            width: 100%;     
+}
+    
+.menu_hader_btn:hover ul{
+            opacity: 1;     
+}
+    
+.menu_hader_bax:hover {
+            height: 200px;
+}
+    
+.menu_hader_btn .active{
+            display: flex;
+}
+    
+.inside{
+           display:contents;   
+}  
+}
   
 /*---------------------hader end--------------------------*/
 
