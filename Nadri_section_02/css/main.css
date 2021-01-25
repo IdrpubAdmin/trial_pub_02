@@ -34,7 +34,7 @@ html,body{
 .container{
              width: 100%;
              max-width: 1920px;
-             margin: 0 auto;
+/*             margin: 0 auto;*/
 }
         
 .main_logo{
@@ -88,15 +88,15 @@ header nav ul li a{
 }
 
 
-.menu_hader_item{
-              position: relative;
+.menu_header_item{
+/*              position: relative;*/
               width: 100%;
               text-align: center;
               margin: 0 auto;
               transition: all .3s;
 }
         
-.menu_hader_bax{
+.menu_header_box{
               width: inherit;
               max-width: 1920px;
               background-color: #030302;
@@ -107,11 +107,11 @@ header nav ul li a{
 }
         
 /*
-.menu_hader_bax:hover{
+.menu_header_box:hover{
             height: 280px;}
 */
 
-.menu_hader_btn{
+.menu_header_btn{
             display: inline-block;
             margin: 5px 25px;
 }    
@@ -126,15 +126,15 @@ header nav ul li a{
             width: 100%;
 }
         
-.menu_hader_btn li{
-            display:block;
+.menu_header_btn li{
+/*          display:block;*/
             float: left;
             position: relative;
             margin: 1px 20px;
             padding: 0;
             width: 150px
 }
- .menu_hader_btn li a{
+ .menu_header_btn li a{
             display: block;
             padding: 7px 8px;
             font-family: 'Nanum Brush Script', cursive;
@@ -143,31 +143,43 @@ header nav ul li a{
             color: #fff;
 }
 
-.menu_hader_btn .menu_sub_box {
+ .menu_sub_box {
             opacity: 0;
 } 
 
-.menu_hader_btn .menu_sub_box:after {
+.menu_header_box::after {
             content: " ";
-            position:absolute;
-            z-index: -100; 
-            top: 45px;
-            left: -495px;
-            width: 1150px;
+            position: absolute;
+            z-index: -100;
+            top: 190px;
+            left: 0;
+            width: 100%;
             height: 230px;
             background-color: black;
-            border-top: 2px solid  rgba(255, 255, 255, 0.5);      
-}
-   
-.menu_hader_item:hover .menu_sub_box {
-            opacity: 1;
+            border-top: 2px solid  rgba(255, 255, 255, 0.5);   
+            opacity:0;
 }
 
-.menu_hader_btn ul li:hover > a{
+.menu_header_box:hover::after{
+    opacity: 1;
+}
+
+.menu_header_box:hover .menu_sub_box{
+    opacity: 1;
+}
+
+
+/*
+.menu_header_item:hover .menu_sub_box {
+            opacity: 1;
+}
+*/
+
+.menu_header_btn ul li:hover > a{
             color: #fbc027;       
 }
 
-.menu_hader_btn .blind{
+.menu_header_btn .blind{
             position: absolute;
              left: 30px;
             top: 50px;
@@ -175,28 +187,24 @@ header nav ul li a{
             text-align: left;
 }
 
-/* .menu_hader_btn ul{
+/* .menu_header_btn ul{
             position: absolute;
             left: 0;
             top: 40px;
             width: 150px;
             text-align: center;
 }
-.menu_hader_bax:hover ul{
+.menu_header_box:hover ul{
     opacity: 1;
 }      
-.menu_hader_btn li:hover ul{
+.menu_header_btn li:hover ul{
             opacity: 1;
 }
 */
 
 @media screen and (max-width:768px) {
     
-.main_silde_banner{
-            
-            
-    }
-    
+
     
 .main_silde_banner .inside{
               width: 100%;
@@ -229,7 +237,7 @@ header{
             display: block;
 }  
 
-.menu_hader_bax { 
+.menu_header_box { 
             position: fixed;
             right: 0;
             top: 13px;
@@ -243,11 +251,11 @@ header{
     display:none;
 }
     
-.nav_toggleBtn:hover .menu_hader_bax{
+.nav_toggleBtn:hover .menu_header_box{
             display: block;
     }
     
-.menu_hader_btn{
+.menu_header_btn{
 /*            display: flex;*/
             flex-direction: column;
             align-items: center;
@@ -269,14 +277,14 @@ nav{
             top: 5px;
 }
 
-.menu_hader_btn li{
+.menu_header_btn li{
              display: inline-table;
              float: none;
              width: 100%;
              border-top: 1px solid #d9ceba;
 } 
     
-.menu_hader_btn li:last-child{
+.menu_header_btn li:last-child{
         border-bottom: 1px solid  #d9ceba;
     }
 
@@ -285,7 +293,7 @@ nav{
             padding-left: 30px; 
 }
     
-.menu_hader_btn li a{
+.menu_header_btn li a{
             padding: 10px;
             text-align: left;
             padding-left: 100px;
@@ -309,16 +317,16 @@ nav{
             width: 100%;     
 }
     
-.menu_hader_btn:hover ul{
+.menu_header_btn:hover ul{
             opacity: 1;  
     
 }
     
-.menu_hader_bax:hover {
+.menu_header_box:hover {
             height: 200px;
 }
     
-.menu_hader_btn .active{
+.menu_header_btn .active{
             display: flex;
 }
     
@@ -340,7 +348,7 @@ nav{
     
 }
   
-/*---------------------hader end--------------------------*/
+/*---------------------header end--------------------------*/
 
 .main_silde_banner .inside{
               position: absolute;
@@ -867,7 +875,7 @@ nav{
 }
 
 .footer_name{
-             width: 1200px;
+             width: 1180px;
              padding: 60px;
              text-align: left;
              line-height: 50px;
