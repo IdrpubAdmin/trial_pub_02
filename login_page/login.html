@@ -3,90 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
     
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link  rel="stylesheet" type="text/css" href="css/Normalize.css">
  
     <style>
-    
+        * {
+                         box-sizing: border-box;
+        }
+
+        input[type="text"] {
+                         width:100%;
+                         height:28px;
+        }
+
+        input[type="Password"] {
+                        width:100%;
+                        height:28px;
+        }
+
+
         #content{
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            background-image:url("img/img.png");
-            background-repeat: repeat-x;
-            background-size: contain;
-            align-items: center;
-            justify-content: center;
-            font-family: 'sans-serif', '나눔고딕';
+                         width: 100%;
+                         height: 100vh;
+                         display: flex;
+                         background-image:url("img/img.png");
+                         background-repeat: repeat-x;
+                         background-size: contain;
+                         align-items: center;
+                         justify-content: center;
+                         font-family: 'sans-serif', '나눔고딕';
         }
         
         .login{
-           position: relative;
-/*
-            width: 37%;
-            height: 26%;
-*/
-            border: 7px solid #4e606c;
-            border-radius: 13px;
-            background-color: #ccd0d2;
+                         position: relative;
+                         width: 40%;
+                         border: 7px solid #4e606c;
+                         border-radius: 13px;
+                         background-color: #ccd0d2;
+                         box-shadow: 1px 1px #000;
          }
         
-           .login_box .top{
-                        text-align: center;
-                        position: relative;
-                        top: 24px;
-                        right: 12px;
+        .login_box .top{
+                         position: relative;
+                         padding-right: 15px;
+                         padding-top: 20px;
+                         text-align: center;
         }
         
         .login_box .btn{
                         width: 100%;
                         text-align: right;
                         height: 60px;
-                        margin-top: 65px;
+                        border-bottom-left-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                        border-top:1px solid #dedddd;
                         background-color: #b0c9d0;
         }
-        
+
         .login_box .top li label{
                         display: inline-block; 
-                        width: 63px; 
-                        font-size: 11px;
+                        width: 40%;
+                        font-size: 1.6px;
+                        font-weight: bold;
+                        color: #545556;
         }
         
         .login_box .top li input{
-                        width: 200px; 
-                        height: 25px;
+                         width: 60%;
+                         color: #dedddd;
+                         background-color: #dedddd;
+                         border-radius: 3px;
+                         border-top: 1px solid #9a9999;
+                         border-left: 1px solid #9a9999;
+                         border-bottom: 1px solid #fff;
+                         border-right: 1px solid #fff;
+
         }
-        
-        .login_box .top li:nth-child(1){
-                        margin: -3px;
-        }
-        
+
         .login_box .top li:nth-child(2){
                         padding-top: 20px;
         }
-        
-        
+
         .login_box .top li:last-child{
-                        border-bottom: 2px solid #666;
-                        color: #666;
-                        width: 76px;
-                        position: relative;
-                        margin: 13px 0 -24px 235px;
+                        padding: 12px 0;
+                        font-weight: bold;
                         text-align: right;
         }
-        
+
+        .login_box .top li a{
+                         border-bottom: 1px solid #293544;
+                         color: #293544;
+        }
+
         button{
-                        width: 85px;
-                        height: 23px;
                         position: relative;
                         top: 16px;
+                        padding: 3px 20px;
                         text-align: center;
                         color:#28567b;
-                        text-shadow: 1px 1px 1px #fff;
-                        margin-right: 18px;
+                        text-shadow: 0.4px 0.4px 0.4px #fff;
+                        margin-right: 15px;
                         font-size: 12px;
-                        border: 3px solid #fff;
+                        font-weight: 600;
+                        border: 1.5px solid #fff;
                         border-radius: 5px;
                         box-shadow: 1.5px 1.5px #666;
                         background: linear-gradient( to bottom, #acddff, #6ebbfc );;
@@ -101,18 +123,17 @@
                
             <div class="login">
                     
-                 <from action="#" mefhod="post"> 
-                    <fieldset>
-                     <legend></legend>
+                 <form action="#" mefhod="post">
+
                     <div class="login_box">
                           <!--post 방식은 암호화 좀더 길게 가능, get방식은 암호화가 아니라 주소표시줄에 묻어간다. -->
                         <ul class="top">
                             <li>
-                                <label for="txt1"></label>user Name<input type="text" id="txt1">
+                                <label for="txt1">user Name</label><input type="text" id="txt1">
                             </li>
                             
                             <li>
-                                <label for="txt2"></label>Password<input type="password" id="txt2">
+                                <label for="txt2">Password</label><input type="password" id="txt2">
                             </li>
                             
                             <li><a href="#" type="button">Forgot Password</a></li>
@@ -122,8 +143,7 @@
                                 <button>Login</button>
                          </div>    
                      </div>
-                    </fieldset> 
-                 </from>             
+                 </form>
             </div>
            </div>
 </body>
