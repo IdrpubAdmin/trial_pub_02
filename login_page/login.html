@@ -40,6 +40,7 @@
         .login{
                          position: relative;
                          width: 40%;
+                         max-width: 350px;
                          border: 7px solid #4e606c;
                          border-radius: 13px;
                          background-color: #ccd0d2;
@@ -56,7 +57,7 @@
         .login_box .btn{
                         width: 100%;
                         text-align: right;
-                        height: 60px;
+                        height: 40px;
                         border-bottom-left-radius: 6px;
                         border-bottom-right-radius: 6px;
                         border-top:1px solid #dedddd;
@@ -100,18 +101,21 @@
 
         button{
                         position: relative;
-                        top: 16px;
-                        padding: 3px 20px;
+                        top: 9px;
+                        padding: 0.8% 9%;
                         text-align: center;
                         color:#28567b;
                         text-shadow: 0.4px 0.4px 0.4px #fff;
                         margin-right: 15px;
-                        font-size: 12px;
+                        font-size: 1.2%;
                         font-weight: 600;
                         border: 1.5px solid #fff;
                         border-radius: 5px;
                         box-shadow: 1.5px 1.5px #666;
                         background: linear-gradient( to bottom, #acddff, #6ebbfc );;
+        }
+        @media screen and (max-width: 720px) {
+        .login {width: 90%;}
         }
 
     </style>
@@ -140,7 +144,7 @@
                         </ul>
                    
                          <div class="btn">
-                                <button>Login</button>
+                             <button>Login</button>
                          </div>    
                      </div>
                  </form>
