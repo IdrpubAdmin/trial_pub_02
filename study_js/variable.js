@@ -3,7 +3,7 @@
 //use this for Valina Javascript
 'use strict';
 
-//2.variable
+//2.variable, rw(read/write) 메모리에 값을 읽고 쓰는게 가능하다. ex)ellie라고 쓰고 hello라고 변경이 가능하다.
 //let(added in ES6) 전세계 언어거 지금 ES6이다.
 //자바스크립트에서 변수룰 정의하는건 딱 하나 let이다! ES6추가된것
 // 그전에는 var를 쓴다! (단점)
@@ -12,6 +12,7 @@
 //var는 블럭 스컵이 없다 블럭을 무시하는 아이다. 블럭을 해도 다 볼수 있다.
 
 //constants 가리키고 있는 포인터가 잠겨있다 그래서 값을 선언하면 절대 다시는 값을 변경할수 없다.
+// ,r(read only) constants는 읽기만 가능하다. 단수로 constant로 적자.
 //let 처럼 값을 계속 변경할수 있는 것은 Mutable데이터 타입라고 한다. 데이터 타입도 계속 변경될수 있다.
 //constants는 변경이 불가하기 때문에 Immutable 타입이라고 한다.
 
@@ -28,6 +29,23 @@
 //object(이 오브젝트는 한가지의 타입들이 여러개 묶어서 한 단위 박스로 나타내는것), box container
 //function(자바스크립트 안에서는 이것도 하나의 데이터 타입이다.),
 // first-class function(함수의 인자로도 전달이 되고,함수에서도 리턴 타임으로도 지원이 가능하다. 이것을 이렇게 말한다.)
+
+// Note!
+// Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+//Immutable data types:데이터 자체를 절대변경할수 없는 것을 의미.
+//premitive types: 우리가 한번 정의한 내용을 통채로 메모리에 올렸다 다른 내용으로 변경이 가능하지
+//데이터 자체를 변경하는건 불가능하다.
+//frozen objects: 역시 꽁꽁 얼어있는 오브젝트도 변경이 불가능 하다.
+
+
+// Mutable data types: all objects by default are mutable in JS
+//objects: 우리가 엘리라는 데이터를 선언하고 나서 엘리 안에 있는 나이랑 이름을 변경했는데 objects는 스스로 변경가능
+//그래서 스스로 변경이 가능하고 자바스크립에서는 기본적으로 모든 objects변경이 가능하다.
+// favor immutable data type always for a few reasons:
+//  - security
+//  - thread safety
+//  - reduce human mistakes
+
 
 //c언어
 //상급 레벨이라고 하는 c언어는 개발자들이 프로그램을 짜면서 상세한 단위로 나워서 할수 있는 부분이라 그렇다.
