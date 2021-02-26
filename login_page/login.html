@@ -67,14 +67,14 @@
         .login_box .top li label{
                         display: inline-block; 
                         width: 40%;
-                        font-size: 1.6px;
+                        font-size: 16px;
                         font-weight: bold;
                         color: #545556;
         }
         
         .login_box .top li input{
                          width: 60%;
-                         color: #dedddd;
+                         color: #444;
                          background-color: #dedddd;
                          border-radius: 3px;
                          border-top: 1px solid #9a9999;
@@ -95,6 +95,7 @@
         }
 
         .login_box .top li a{
+                         font-size: 12px;
                          border-bottom: 1px solid #293544;
                          color: #293544;
         }
@@ -107,7 +108,7 @@
                         color:#28567b;
                         text-shadow: 0.4px 0.4px 0.4px #fff;
                         margin-right: 15px;
-                        font-size: 1.2%;
+                        font-size: 12px;
                         font-weight: 600;
                         border: 1.5px solid #fff;
                         border-radius: 5px;
@@ -123,6 +124,8 @@
 </head>
 <body>
 <!-- 우선 포토샵에서 사이즈 체크후에 배경을 잡고 각각 width값을 주고 하면 될것같다.-->
+       <!--input type="text" size=""/maxlength="" (size=글자개수,maxlength=최대입력개수)-->
+       <!--value=초기값/placeholder=입력예시  -->
         <div id="content">
                
             <div class="login">
@@ -133,11 +136,11 @@
                           <!--post 방식은 암호화 좀더 길게 가능, get방식은 암호화가 아니라 주소표시줄에 묻어간다. -->
                         <ul class="top">
                             <li>
-                                <label for="txt1">user Name</label><input type="text" id="txt1">
+                                <label for="txt1">ID</label><input type="text" placeholder="ID" id="txt1">
                             </li>
                             
                             <li>
-                                <label for="txt2">Password</label><input type="password" id="txt2">
+                                <label for="txt2">비밀번호</label><input type="password" placeholder="password" id="txt2">
                             </li>
                             
                             <li><a href="#" type="button">Forgot Password</a></li>
