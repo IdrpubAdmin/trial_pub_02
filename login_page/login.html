@@ -1,12 +1,48 @@
+<!--DOCTYPE은 가장먼저 선언해야하는 걸로 웹 브라우저에 알려주는 역할을 하는 선언문으로 대소문자를 구분하지 않습니다.
+HTML 4.01에서는 DOCTYPE 선언은 SGML을 기반으로 DTD를 참조해야 하지만 HTML5는 SGML을 기반으로 하지 않기 때문에 DTD을 참조할 필요 없습니다.
+-->
 <!DOCTYPE html>
+
+<!--HTML 문서에서 사용하는 언어를 나타내는 기능을 하는 부분입니다."ko"는 korea를 줄인 것 입니다.
+lang의 속성에 명시된 값을 스크린 리더에 인식하는 방식입니다.(스크린 리더는 시각장애인을 위한 보조공학.) -->
 <html lang="ko">
+
+<!--웹페이지에 직접적으로 표현되지는 않으나,이 요소 안에 제목이나(메타정보들:title, link, scipt)등,
+웹페이지가 검색엔진에 노출이 될 수 있도록 하는 기능을 합니다.-->
 <head>
+
+<!--meta라는 태그를 사용하여 고유속성 중 charset이라는 속성으로 인코딩시 문자 코드세트의 설정 역할을 지정해 줍니다.
+heed영역에 위차한 것을 보니 웹브라우저에 표시되는 내용이 아니라 현재 문서의 정보를 제공하는 역할을 하는 것임을 알수 있습니다.
+meta태그는 메타데이터 즉 다른 데이터를 설명해 주는 데이터를 의미합니다.
+UTF-8은 국제적으로 다국어로 인코딩 할 때 사용하는 것으로 권장합니다. -->
     <meta charset="UTF-8">
+
+<!--title 요소는 브라우저의 제목 표시줄이나 페이지 탭에 보이는 문서 제목을 정의 합니다. 텍스트만 포함할 수 있습니다.
+-->
     <title>login</title>
+
+<!--ㅡmeta viewport 태그는 모바일 브라우저의 뷰포트 크기 조절위해 만들었습니다.
+meta name="viewport" content="width=device-width는 브라우저 너비를 장치 너비에 맞추어 표시하는걸 표현합나다.
+initial-scale=1.0 초기화면 비율을 100%로 하는데
+(initial-scale는 뷰포트의 초기 배율 (곱하는 수)기본값은 보이는 영역에서 웹페이지에 맞추기 위해 계산하는하는 속성값입니다.)
+(minimum-scale=1.0,maximum-scale=1.0) 이 부분은 극단적으로 작게나 크게 하는걸 방지하기 위해 정하는 속성값입니다.
+(user-scalable=no) 이 부분은 사용자가 화면을 축소/확대 할 수 있는지 여부를 결정하는 부분으로
+ yes는 크기 조절을 가능하게 설정(기본값)
+ no는 크기 조절이 불가능하게 설정 웹페이지가 input영역에서 텍스트를 입력할 때 스크롤되는것도 방지합니다.-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-    
+<!--script 태그의 src속성은 외부 스크립트 파일의 URL을 명시합니다.
+ 데이터와 실행 가능한 코드를 문서에 포함할 때 사용하며 javascript코드롸 함께 사용합니다.
+ head안에 명시를 해줘야 합니다.-->
+    <script src="script/login.js" defer></script>
+
+<!--HTML link요소는 현제 문서와 외부 리소스의 관게를 명시합니다. link는 스타일시트를 연결할 때 많이 사용됩니다.
+외부 스타일 시트와 연결하려면 head안에 link요소를 배치해야 합니다.
+href는 스타일 경로를 적어주면 됩니다. rel는 현재문서와 연결한 아이템의 관계가 어떻게 되는지 설명해주는 곳 입니다.
+type 특성은 연결한 리소스의 MIME
+(클라이언트에게 전송된 문서의 다양성을 알려주기 위한 메커니즘 입니다.간단히 말하자면 파일변환을 말합니다.)포함합니다.-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+
     <link  rel="stylesheet" type="text/css" href="css/Normalize.css">
  
     <style>
@@ -113,42 +149,51 @@
                         border: 1.5px solid #fff;
                         border-radius: 5px;
                         box-shadow: 1.5px 1.5px #666;
-                        background: linear-gradient( to bottom, #acddff, #6ebbfc );;
+                        background: linear-gradient( to bottom, #acddff, #6ebbfc );
+            cursor: pointer;
         }
         @media screen and (max-width: 720px) {
         .login {width: 90%;}
         }
-
     </style>
+
     
 </head>
+
+<!--HTML body요소는 HTML문서의 내용을 나타 냅니다. 한 문서에 하나의 body만 존재할수 있습니다.
+body 태그는 해당 HTML 문서의 텍스트, 하이퍼링크, 이미지, 리스트 등과 같은 모든 콘텐츠를 포함하는 영역을 정의할 때 사용합니다.-->
 <body>
 <!-- 우선 포토샵에서 사이즈 체크후에 배경을 잡고 각각 width값을 주고 하면 될것같다.-->
+
        <!--input type="text" size=""/maxlength="" (size=글자개수,maxlength=최대입력개수)-->
        <!--value=초기값/placeholder=입력예시  -->
         <div id="content">
                
             <div class="login">
                     
-                 <form action="#" mefhod="post">
+                 <form name="loginform" action="#" mefhod="post">
 
                     <div class="login_box">
                           <!--post 방식은 암호화 좀더 길게 가능, get방식은 암호화가 아니라 주소표시줄에 묻어간다. -->
                         <ul class="top">
                             <li>
-                                <label for="txt1">ID</label><input type="text" placeholder="ID" id="txt1">
+                                <label for="txt1">ID</label><input type="text" name="userId" placeholder="ID" id="txt1" value="">
                             </li>
                             
                             <li>
-                                <label for="txt2">비밀번호</label><input type="password" placeholder="password" id="txt2">
+                                <label for="txt2">비밀번호</label><input type="password" name="password" placeholder="password" id="txt2" value="">
                             </li>
                             
                             <li><a href="#" type="button">Forgot Password</a></li>
                         </ul>
                    
                          <div class="btn">
-                             <button>Login</button>
-                         </div>    
+<!--                             <div class="btn_login">-->
+<!--                                 <input type="button" value="Login" name="login" onclick="login">  -->
+<!--                             </div>-->
+                         <button type="button" class="login_btn">Login</button>
+
+                         </div>
                      </div>
                  </form>
             </div>
