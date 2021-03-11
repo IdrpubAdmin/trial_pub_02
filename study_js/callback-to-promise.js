@@ -1,6 +1,41 @@
-//1. Use strict
-//added in ES 5
-//use this for Valina Javascript
-'use strict';
 
-console.log('this is callback-to-promise.js file');
+// Callback Hell example
+class UserStorage {
+  loginUser(id, password) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (
+          (id === 'ellie' && password === 'dream') ||
+          (id === 'coder' && password === 'academy')
+        ) {
+          resolve(id);  //onSuccess 대신  resolve를 사용한다.
+        } else {
+          reject(new Error('not found'));
+        }
+      }, 2000);
+    });
+  }
+
+  getRoles(user) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (user === 'ellie') {
+          resolve({ name: 'ellie', role: 'admin' });
+        } else {
+          reject(new Error('no access'));
+        }
+      }, 1000);댜ㅣ
+    });
+  }
+
+}
+// Original code from Youtube course
+const userStorage = new UserStorage();
+const id = prompt('enter your id');
+const password = prompt('enter your passrod');
+userStorage
+  .loginUser(id, password)
+  .then(userStorage.getRoles)
+  .then(user => alert(`Hello ${user.name}, you have a ${user.role} role`))
+  .catch(console.log);
+//
