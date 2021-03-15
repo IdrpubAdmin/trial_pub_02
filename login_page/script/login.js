@@ -79,10 +79,16 @@ function check() {
         //     return false;
         // }
         //
-        if(CheckOne.test(password)){
-            alert('비밀번호가 틀립니다.');
+        // if(CheckOne.test(password)){
+        //     alert('비밀번호가 틀립니다.');
+        //     return false;
+        // }
+
+        if(/^\d/.test(userId)){
+            alert('첫 번째 글자는 문자로 입력해주세요.');
             return false;
         }
+
 
 
     }
@@ -95,19 +101,19 @@ function check() {
 }
 
 function checkKey(e){
-    let checkResult = false;
-    console.log(e.keyCode);
-
-        if(!(e.keyCode == 20)){
-            alert('Csps Lock확인하세요.');
-            return false;
-        }
-
-    checkResult = true;
-
-    if(checkResult){
-        alert("서밋 직전~!");
-    }
+    // let checkResult = false;
+    // console.log(e.keyCode);
+    //
+    //     if(e.keyCode == 20){
+    //         alert('Csps Lock확인하세요.');
+    //         return false;
+    //     }
+    //
+    // checkResult = true;
+    //
+    // if(checkResult){
+    //     alert("서밋 직전~!");
+    // }
 
 }
 
