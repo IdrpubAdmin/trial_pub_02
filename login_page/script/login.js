@@ -15,16 +15,16 @@ function check() {
     //셋팅된 ID
     const dbId = 'soo1111';
     //셋팅된 PW
-    const dbPw = '1234';
+    const dbPw = 'Ab#1234';
 
     // 숫자,영문,특수문자,한글 (정규식)
-    const checkNum = /[0-9]/;
-    const checkEng = /[a-zA-Z]/;
-    const checkEnga = /[a-z]/;
-    const checkEngA = /[A-Z]/;
-    const checkSpc = /[~!@#$%^&*()_+|<>?:{}]/;
-    const checkKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
-    const checkOne = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{5,}$/;
+    const CheckNum = /[0-9]/;
+    const CheckEng = /[a-zA-Z]/;
+    const CheckEnga = /[a-z]/;
+    const CheckEngA = /[A-Z]/;
+    const CheckSpc = /[~!@$%^#&*()_+|<>?:{}]/;
+    const CheckKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+    const CheckOne = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/;
 
 
 
@@ -39,57 +39,59 @@ function check() {
     console.log("password : " + password)
 
     if (!checkResult) {
-        // if (userId === "" || userId === null) {
-        //     alert('ID를 입력해주세요');
-        //     return false;
-        // }
-        // if (password === "" || password === null) {
-        //     alert('비밀번호를 입력해주세요');
-        //     return false;
-        // }
-        // if (!(userId.length >= 5 && userId.length < 19)) {
-        //     alert('올바른 ID를 입력해주세요');
-        //     return false;
-        // }
-        // if (!(password == '1234')) {
-        //     alert('비밀번호가 틀립니다.');
-        //     return false;
-        // }
-        // if (!(userId === 'soo1111')) {
-        //     alert('ID가 틀립니다.');
-        //     return false;
-        // }
-        //
-        // if (!(userId == 'soo1111' && password == '1234')) {
-        //     alert('아이디 혹은 비밀번호가 잘못 입력하셨습니다');
-        //     return false;
-        // }
 
-        //  if(checkSpc.test(userId)){
-        //      alert('ID는 특수문자는 사용할 수 없습니다');
-        //     return false;
-        // }
-        //
-        // if(checkEngA.test(userId)){
-        //     alert('ID에 대문자를 사용 할 수 없습니다');
-        //     return false;
-        // }
-        // if(checkKor.test(userId)){
-        //      alert('ID에 한글을 사용할 수 없습니다');
-        //     return false;
-        // }
-        //
-        // if(CheckOne.test(password)){
-        //     alert('비밀번호가 틀립니다.');
-        //     return false;
-        // }
+        if (userId === "" || userId === null) {
+            alert('ID를 입력해주세요');
+            return false;
+        }
+        if (password === "" || password === null) {
+            alert('비밀번호를 입력해주세요');
+            return false;
+        }
 
         if(/^\d/.test(userId)){
             alert('첫 번째 글자는 문자로 입력해주세요.');
             return false;
         }
 
+        if(CheckKor.test(userId)){
+            alert('ID에 한글을 사용할 수 없습니다');
+            return false;
+        }
 
+        if (!(userId.length >= 5 && userId.length < 19)) {
+            alert('올바른 ID를 입력해주세요');
+            return false;
+        }
+
+        if(CheckSpc.test(userId)){
+            alert('ID는 특수문자는 사용할 수 없습니다');
+            return false;
+        }
+
+        if(!(CheckOne.test(password))){
+            alert('비밀번호가 틀립니다.');
+            return false;
+        }
+
+        if(CheckEngA.test(userId)){
+            alert('아이디에 대소문자 확인해주세요');
+            return false;
+        }
+
+        if (!(userId == 'soo1111' && password == 'Ab#1234')) {
+            alert('아이디 혹은 비밀번호가 잘못 입력하셨습니다');
+            return false;
+        }
+
+        if (!(password == 'Ab#1234')) {
+            alert('비밀번호가 틀립니다.');
+            return false;
+        }
+        if (!(userId === 'soo1111')) {
+            alert('ID가 틀립니다.');
+            return false;
+        }
 
     }
     checkResult = true;
@@ -101,19 +103,23 @@ function check() {
 }
 
 function checkKey(e){
-    // let checkResult = false;
-    // console.log(e.keyCode);
-    //
-    //     if(e.keyCode == 20){
-    //         alert('Csps Lock확인하세요.');
-    //         return false;
-    //     }
-    //
-    // checkResult = true;
-    //
-    // if(checkResult){
-    //     alert("서밋 직전~!");
-    // }
+    const CheckEngA = /[A-Z]/;
+    console.log(e.keyCode);
+    console.log(e.key);
+
+    if(e.keyCode == 20){
+        alert('CspsLock확인하세요.');
+        return false;
+    }
+
+    if(CheckEngA.test(e.key && e.keyCode == 8 )){
+        alert("대문자 입니다.");
+        return false;
+    }
+
+
+
+
 
 }
 
