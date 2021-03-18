@@ -17,10 +17,17 @@
     
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
         
+         <!--  css 로컬로 파일 저장   -->
+         <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+        
         <script src="https://kit.fontawesome.com/9a12893b42.js" crossorigin="anonymous"></script>
+        
+        <!--  js 로컬로 파일 저장   -->
+        <script src="script/main.js"></script>
+    <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
 
     <!--나눔브러쉬스크립트-->
-    
     <!--font-family: 'Nanum Myeongjo', serif;
         font-family: 'Nanum Gothic', sans-serif;
         font-family: 'Nanum Brush Script', cursive;-->
@@ -149,9 +156,9 @@
             <!--해드-->
              <!--리스트-->
              <div class="menu_ul_box">
-                 <div class="inner">
-                    <ul>
-                         <li>
+                 <div class="inner swiper-container">
+                    <ul class="swiper-wrapper">
+                         <li class="swiper-slide">
                              <div class="menu_item">
                                  <div class="head_img_box">
                                      <img src="img/layer-15.png">
@@ -171,7 +178,7 @@
                              </div>
                          </li>
 
-                         <li>
+                         <li class="swiper-slide">
                              <div class="menu_item">
                                  <div class="head_img_box">
                                      <img src="img/layer-16.png">
@@ -191,7 +198,7 @@
                              </div>
                          </li>
 
-                         <li>
+                         <li class="swiper-slide">
                              <div class="menu_item">
                                  <div class="head_img_box">
                                      <img src="img/layer-17.png">
@@ -211,7 +218,7 @@
                              </div>
                          </li>
 
-                         <li>
+                         <li class="swiper-slide">
                              <div class="menu_item">
                                  <div class="head_img_box">
                                      <img src="img/layer-18.png">
@@ -231,8 +238,8 @@
                              </div>
                          </li>
 
-                         <li>
-                         <div class="menu_item">
+                         <li class="swiper-slide">
+                             <div class="menu_item">
                              <div class="head_img_box">
                                  <img src="img/layer-15.png">
                              </div>
@@ -249,20 +256,48 @@
                                  </p>
                              </div>
                          </div>
-                     </li>
+                         </li>
                      </ul>
                  </div>
+                 
                  <div class="menu_ul_nav">
                      <div class="inner">
-                        <a href="#" class="head_right_btn">
-                             <img src="img/allow-copy-2.png">
+                       
+                        <a class="head_right_btn swiper-button-next">
                          </a>
-                         <a href="#" class="head_left_btn">
-                             <img src="img/allow-copy-3.png">
+                         
+                         <a class="head_left_btn swiper-button-prev">
                          </a>
+                         
                      </div>
                  </div>
              </div>
+             
+ <!-- Initialize Swiper -->            
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+//      loop:true,
+        spaceBetween: 30,
+        slidesPerView: 4,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+    </script>
               <!--리스트-->
          </div>
          <!--첫번째 section-->

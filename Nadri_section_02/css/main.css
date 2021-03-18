@@ -398,13 +398,13 @@ nav{
 }
 .section1 .menu_ul_box ul{
             position: relative;
-            width:calc((270px + 25px) * 5 );
+            width:calc((270px + 25px) * 4 );
             margin-top:50px;
 }
 
 .section1 .menu_ul_box ul li{
             display:inline-block;
-            width: 270px;
+            width: 270px !important;
             margin-right: 25px;
 }
 
@@ -470,7 +470,8 @@ nav{
     
 }
 .menu_ul_nav{
-            position: absolute;
+    
+/*            position: absolute;*/
             top:105px;
             left:0;
             width:100%;
@@ -480,25 +481,35 @@ nav{
 }
 
 .menu_ul_nav a{
-            display:inline-block;
-            width:46px;
-            height:86px;
+        /*  display:inline-block;  */
+            position: absolute;
+            width: 47px;
+            height:86px;  
+            background-repeat: no-repeat;
+            z-index: 2;
+            text-indent: -9999px;
 }
-.head_right_btn {
-            float:right;
-            margin-right:-96px;
+
+.menu_ul_nav .head_right_btn {
+            /*  float:right;  */
+            /*  margin-right:50px;  */
+            right: 14%;
+            background-image:url(../img/allow-copy-2.png);
 }
-.head_left_btn {
-            float:left;
-            margin-left:-96px;
-}    
+
+.menu_ul_nav .head_left_btn{
+            /*  float:left;  */
+            /*  margin-left:50px;  */
+            left:13%;
+            background-image: url(../img/allow-copy-3.png);
+}
 
 .section2 .nadri_banner{
             width: 100%;
             max-width: 1920px;
             height: 250px;
-            background: url(../img/layer-59@3x.png)no-repeat center center;
-            background-attachment: fixed;
+            background: url(../img/layer-22.png)no-repeat center center;
+            /* background-attachment: fixed; */
            
 }
 
