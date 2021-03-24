@@ -153,10 +153,11 @@
                 </h1>
                 <p>Nadri Gimbap Menu</p>
             </div>
+            
             <!--해드-->
              <!--리스트-->
              <div class="menu_ul_box">
-                 <div class="inner swiper-container">
+                 <div class="inner swiper-container swiper1">
                     <ul class="swiper-wrapper">
                          <li class="swiper-slide">
                              <div class="menu_item">
@@ -273,31 +274,31 @@
                  </div>
              </div>
              
- <!-- Initialize Swiper -->            
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-//      loop:true,
-        spaceBetween: 30,
-        slidesPerView: 4,
-      direction: getDirection(),
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
-        }
-      }
-    });
+             <!-- Initialize Swiper -->            
+            <script>
+                var swiper = new Swiper('.swiper1', {
+            //      loop:true,
+            //        spaceBetween: 30,
+                    slidesPerView: 4,
+                  direction: getDirection(),
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                  on: {
+                    resize: function () {
+                      swiper.changeDirection(getDirection());
+                    }
+                  }
+                });
 
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+                function getDirection() {
+                  var windowWidth = window.innerWidth;
+                  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
 
-      return direction;
-    }
-    </script>
+                  return direction;
+                }
+            </script>
               <!--리스트-->
          </div>
          <!--첫번째 section-->
@@ -401,14 +402,17 @@
                </div>
          <!--네번째 section-->
          <!--다섯번째 section-->
-         <div class="section5">
-              <div class="bottom_title">
+             <div class="section5">
+               
+                <div class="bottom_title">
                    <h2>NATIONWIDE SHOP OF <span>NADRI</span></h2>
                    <p>Nadri Gimbap Shop</p>
-                   </div>
-                   <div class="bottom-box">
-                     <ul>
-                         <li>
+                </div>
+                  
+                   <div class="bottom-box swiper-container swiper2" >
+                     <ul class="map swiper-wrapper">
+                        
+                         <li class="shop swiper-slide">
                              <div class="bottom_img">
                                  <img src="img/img-4274.png" alt="">
                                  <div class="bottom_txt">
@@ -420,7 +424,7 @@
                              </div>
                          </li>
                          
-                         <li class="active">
+                         <li class="shop swiper-slide">
                              <div class="bottom_img">
                                  <div class="bottom-title">
                                  <img src="img/layer-59.png" alt="">
@@ -434,7 +438,7 @@
                              </div>
                          </li>
                          
-                          <li>
+                          <li class="shop swiper-slide">
                              <div class="bottom_img">
                                  <div class="bottom-title">
                                  <img src="img/img-4274.png" alt="">
@@ -448,7 +452,7 @@
                               </div>
                          </li>
                          
-                         <li>
+                         <li class="shop swiper-slide">
                              <div class="bottom_img">
                                  <div class="bottom-title">
                                  <img src="img/img-4274.png" alt="">
@@ -462,16 +466,39 @@
                               </div>
                          </li>
                      </ul>
-                     <div class="bottom-btn">
-                            <a href="#" class="bottom-right-btn">
-                                <img src="img/allow-copy-2.png" alt="">
+                     
+                         <div class="bottom-btn">
+                           
+                            <a href="#" class="bottom-right-btn swiper-button-next">
                             </a>
-                            <a href="#" class="bottom-left-btn">
-                                <img src="img/allow-copy-3.png" alt="">
+                            
+                            <a href="#" class="bottom-left-btn swiper-button-prev"> 
                             </a>
+                            
                         </div>
+                        
                    </div>
-               </div>
+
+                    <!-- Initialize Swiper -->
+                 <script>
+                     var swiper = new Swiper('.swiper2', {
+                         slidesPerView: 3,
+                    //      spaceBetween: 30,
+                    //      slidesPerGroup: 4,
+                         loop: true,
+                         loopFillGroupWithBlank: true,
+                         pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                          },
+                         navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                          },
+                        });
+                </script>
+            </div>
+                
          <!--다섯번째 section-->
          <!--footer-->
         <footer id="footers">
