@@ -1,6 +1,6 @@
 html,body{
             width: 100%;
-    
+            
         }
 
 .inner {
@@ -13,6 +13,8 @@ html,body{
             width: 100%;
             max-width: 1920px;
             margin: 0 auto;
+            overflow: hidden;
+           
         }
 
 .main_silde_banner{
@@ -214,19 +216,19 @@ header nav ul li a{
         }    
     
 header{
-        position: static;
-        z-index: 0;
+              position: static;
+              z-index: 0;
         }
     
 .container{
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 50;
-        width: 100%;
-        padding: 5px 0; 
-        background-color: #000;
-        opacity: 1;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 50;
+            width: 100%;
+            padding: 5px 0; 
+            background-color: #000;
+            opacity: 1;
         }
     
 .main_logo{
@@ -264,7 +266,7 @@ header{
             align-items: center;
             width: 100%;
             margin: 0;
-        display:none;
+            display:none;
         }        
  
 .main_silde_banner{
@@ -346,7 +348,7 @@ nav{
         }
     
     .quick_menu {
-        opacity: 0;
+            opacity: 0;
     }   
 
     
@@ -624,8 +626,28 @@ nav{
         }
 
 .about_nadri_btn{
-         margin-top: 44px;
+         margin-top: 90px;
+/*
+      position: absolute;
+            width: 47px;
+            height:86px;  
+            background-repeat: no-repeat;
+            z-index: 2;
+*/
+            text-indent: -9999px;
+    
         }
+
+.about_nadri_btn .down_btn{
+    left: 45%;
+    top: 80%;
+}
+
+.about_nadri_btn .up_btn{
+    right: 35%;
+    top: 80%;
+}
+
 
 .about_txt_line{
             width: 65px;
@@ -643,13 +665,14 @@ nav{
             max-width: 1000px;
             max-height: 570px;
             width: 100%;
-            overflow: hidden;
+/*            overflow: hidden;*/
             margin: 0 auto;
         }
        
 .section4 ul li{
             display: flex;
-            margin: 30px; 
+            margin: 20px;
+            height: auto!important;
         }
 .nav_title_box{
             display:flex;
@@ -799,26 +822,28 @@ nav{
             position: relative;
             width: 100%;
             overflow: hidden;
+            overflow: visible;
         }
-.bottom-box map{
+.bottom-box .map{
             width:calc(640px * 4);
-            margin-left:calc(((-640px * 3) + 100% ) / 2)
-}
+            margin-left:calc(((-640px * 3) + 100% ) / 2);
+        }
 
-.bottom-box map shop{
+.bottom-box .map .shop{
             display: inline-block;
             float: left;
         }
 
-.bottom-box map shop .bottom_img{
+.bottom-box .map .shop .bottom_img{
             position: relative;
         }
         
-.bottom-box map shop:first-child{
-            opacity: 0.5;}
-      
-.bottom-box map shop:nth-child(3n){
-            opacity: 0.5;}
+.bottom-box .map .shop.swiper-slide{
+            opacity: 0.5;
+}
+.bottom-box .map .shop.swiper-slide-next{
+            opacity: 1;
+}
 
 .bottom_txt{
             background-color: #333; 
@@ -961,7 +986,7 @@ nav{
              border: 2px solid #7d7d7d;
              color: #7d7d7d;
              font-size: 1.6rem;
-             background: url(../img/layer-20-copy-2.png) no-repeat right 13px center;
+             background: url(../img/bottem-but.png) no-repeat right 13px center;
              background-color: #fff;
              border-radius: 5px;
              appearance:none;

@@ -9567,6 +9567,9 @@
   Swiper.use(components);
 
   return Swiper;
-
+                      
 })));
+
+
+
 //# sourceMappingURL=swiper-bundle.js.map
