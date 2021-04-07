@@ -27,7 +27,6 @@ function check() {
     const CheckOne = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/;
 
 
-
     //HTMl
     let loginform = document.loginform;
     let userId = loginform.userId.value;
@@ -117,15 +116,7 @@ function checkKey(e){
         return false;
     }
 
-
-
-
-
 }
-
-
-
-
 
 
 //querySelector는 제공한 선택자 또는 선택자 뭉치와 일치하는 문서 내 첫 번째 Element를 반환합니다. 일치하는 요소가 없으면 null을 반환합니다.
