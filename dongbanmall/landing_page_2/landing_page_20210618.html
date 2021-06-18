@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+<style>
+    * {
+        box-sizing:border-box;
+    }
+    html, body, p {
+        margin:0;
+        padding:0;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    em {
+        font-style:normal;
+    }
+    .wrap {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+        height:100vh;
+    }
+    .landing-page-wrap {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        padding:40px;
+        width:500px;
+        border:2px solid #999;
+    }
+    .landing-page-wrap > div {
+        flex-basis:100%;
+    }
+    .logo-box {
+        max-width:100px;
+    }
+    .logo-box img {
+        width:100%;
+    }
+    .desc-box {
+        margin-top:40px;
+        display:flex;
+        justify-content:space-between;
+    }
+    .prograss-bar {
+        position:relative;
+        margin-top:10px;
+        widht:100%;
+        height:10px;
+        background: #b6d2ea;
+        border-radius:5px;
+    }
+    .prograss-bar .bar {
+        position:absolute;
+        top:0;
+        left:0;
+        width:0;
+        height:10px;
+        background: #1687e2;
+        border-radius:5px;
+        animation:bar-motion  3s linear infinite;
+    }
+    @-webkit-keyframes bar-motion {
+        0% {width:0;}
+        100% {width:100%;}
+    }
+    .gray-box {
+        margin-top:10px;
+        padding:20px 20px;
+        background:#ccc;
+        border-radius:5px;
+    }
+    .gray-box p {
+        font-size:12px;
+    }
+    .point-txt {
+        margin-top:10px;
+        color:#1687e2;
+        text-align:center;
+    }
+    .only-pc {
+        display:block;
+    }
+    @media only screen and (max-width: 640px) {
+        .landing-page-wrap {
+            width:98%;
+            height:98%;
+            align-content:center;
+        }
+        .desc-box {
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+        .only-pc {
+            display:none;
+        }
+    }
+</style>
+<div class="wrap">
+    <div class="landing-page-wrap">
+        <div class="logo-box">
+            <img src="images/logo.png" alt="로고"/>
+        </div>
+        <div class="desc-box">
+            <span>서비스 <b>접속대기 중</b> 입니다.</span>
+            <span>예상대기 시간 : <em>3</em> 초</span>
+        </div>
+        <div class="prograss-bar">
+            <!--<div class="bar" style="width:20%"></div>-->
+            <div class="bar"></div>
+        </div>
+        <div class="gray-box">
+            <p>
+                고객님 앞에 <em>1</em>명, 뒤에 <em>1</em>명의 대기자가 있습니다. <br>
+                현재 접속 사용자가 많아 대기 중이며, 잠시만 기다리시면 <br class="only-pc"> 서비스로 자동 접속 됩니다.
+            </p>
+            <p class="point-txt">※ 재 접속하시면 대기시간이 더 길어집니다.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

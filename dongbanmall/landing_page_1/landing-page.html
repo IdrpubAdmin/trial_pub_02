@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>접속대기중</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+   <style>
+    *{margin: 0; padding: 0;}
+      
+        body{
+            font-family:"Nanum Gothic", sans-serif;
+            font-size: 0.9em;
+            font-style: normal;
+            font-weight: normal;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: #333;
+            }
+       
+        ul li{list-style: none;}
+       
+        a{ text-decoration: none;}
+       
+        img{display: block; border: 0;}
+       
+        .title_caption{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 120px;
+                }
+       
+       .top-logo{
+                width: 100%;
+                position: relative;
+                height: inherit;
+                margin: 0 auto;
+                }
+
+        .logo{
+                position: absolute;
+                width: auto;
+                left: 3%;
+                margin-top: -80px;
+               }
+               
+        .title_caption h1{
+                font-size: 3em;
+                letter-spacing: 3px;
+                margin-bottom: 40px; 
+                color:#333;
+                font-weight: 600;
+                padding-bottom: 40px;   
+                }
+        
+        .title_caption h2{
+                margin-bottom: 10px;
+                font-size: 1.8em;
+                letter-spacing: 2px;
+                color: #3d03e8;
+                font-weight: 600;
+                }
+       .title_caption h3{
+                font-size: 1.5em;
+                letter-spacing: 2px;
+                color: #000;
+                font-weight: 600;
+                }
+       
+       .sub_text p:first-child{
+                text-align: center;
+                font-size:1.5em;
+                padding-top: 40px;   
+                }
+       
+        .sub_text p:nth-child(2){
+                text-align: center;
+                font-size:2.45em;
+                color: #5219fb;
+                padding-top: 30px;   
+                }
+       
+        .sub_text span{
+                text-align: center;
+                font-weight: 800;
+                letter-spacing: 3px;
+                }
+ 
+        .graph { 
+                position: relative; 
+                margin: 0 auto;
+                width: 45%;
+                max-width: 45%;
+                margin-top: 38px;
+                background:#f0f0f0; 
+                text-align:right;
+		        font-size:11px;
+		        margin-bottom:3px;
+                border-radius: 50px; 
+                }
+       
+        .graph .bar { 
+                display:block;
+                position: relative;
+                background: #5219fb; 
+                color: #333; 
+                height: 2em; 
+                line-height: 2em; 
+            
+                border-radius: 50px;
+                }
+       
+       .graph p{
+                position: absolute;
+                left: 100%;
+                top: -4%;
+                font-size: 1em;
+                }
+       
+       .sub_text01 {
+                width: 400px;
+                height: 40px;
+                border: 1px solid #f0f0f0;
+                background: #f0f0f0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50px;
+                margin: 30px auto 0;
+                }
+       
+       .sub_text01 span{
+                font-weight: 600;
+                font-size: 1.2em; 
+                }
+
+        .sub-title{              
+                font-size: 1.2em;
+                }
+       
+        .footer{ 
+                text-align: center;
+                padding: 20px 0;
+                }
+
+        .footer p{
+                font-size: 1em;
+                }
+       
+       .footer img{
+                margin: 0 auto;
+                margin-top: 30px;
+                }
+
+    </style>
+</head>
+<body>
+   <!--로고와 메뉴-->
+
+       <!--타이틀-->
+           <div class="title_caption">
+                <div class="top-logo">
+                    <img src="images/logo.png" alt="" class="logo" width="58px; height:43px;">
+                </div>
+                    <h1>접속 대기중</h1>
+                    <h2>동시 접속 고객의 증가로 접속이 지연되고 있습니다.</h2><br>
+                    <h3>잠시 기다려 주세요.</h3>
+      
+                <div class="graph">
+                    <span class="bar" style="width: 80%;"></span>
+                    <p>80%</p>
+                </div>
+     
+                <div class="sub_text">
+                    <p>예상 대기시간</p>
+                    <p>약 <span>12</span>분 <span>24</span>초</p>    
+                </div>
+            
+                <div class="sub_text01">
+                    <p class="sub-title">현재대기인원: 총<span>6,678</span>명</p>
+                </div>  
+    
+               <div class="footer">
+                    <p>새로고침 또는 뒤로가기를 하시면 다시 대기시간이 부여됩니다.</p>
+                    <img src="images/img_1.png" alt="">
+               </div>
+         </div>
+</body>
+</html>
