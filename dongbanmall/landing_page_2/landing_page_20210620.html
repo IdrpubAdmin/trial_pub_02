@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <title>Landing Page</title>
+</head>
+<body>
+<style>
+    * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    html, body, p {
+        font-family: 'NanumSquare', 'Noto Sans KR', sans-serif;
+    }
+    em {
+        font-style:normal;
+    }
+    .wrap {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+        height:100vh;
+        background:#f0f0f0;
+    }
+    .landing-page-wrap {
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        padding:30px 40px 60px;
+        width:630px;
+        border:1px solid #ccc;
+        background:#fff;
+        box-shadow:1px 0 14px rgba(0,0,0,0.2);
+    }
+    .btn-close {
+        position:absolute;
+        top:30px;
+        right:30px;
+        appearance:none;
+    }
+    .btn-close img {
+        width:18px;
+        height:18px;
+    }
+    .landing-page-wrap > div {
+        flex-basis:100%;
+    }
+    .logo-box {
+        display:flex;
+        justify-content:flex-start;
+    }
+    .logo-box img {
+        width:100%;
+        max-width:58px;
+    }
+    .page-tit {
+        margin:0;
+        font-weight:700;
+        font-size:36px;
+        color:#000;
+    }
+    .desc-box {
+        margin-top:40px;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+    .desc-box span {
+        flex-basis:100%;
+        text-align:center;
+    }
+    .desc-box .t1 {
+        padding-bottom:10px;
+        font-weight:700;
+        font-size:24px;
+        color:#009643;
+        line-height:1.4em;
+    }
+    .desc-box .t2 {
+        font-weight:700;
+        font-size:18px;
+        color:#000;
+    }
+    .prograss-bar-wrap {
+        display:flex;
+        margin-top:40px;
+        margin-bottom:30px;
+    }
+    .prograss-bar {
+        position:relative;
+        width:calc(100% - 36px);
+        height:14px;
+        background: #f0f0f0;
+        border-radius:10px;
+    }
+    .prograss-bar .bar {
+        position:absolute;
+        top:0;
+        left:0;
+        width:0;
+        height:100% ;
+        background: #09ce58;
+        border-radius:10px;
+        animation:bar-motion  3s linear infinite;
+    }
+    .bar-txt {
+        display:inline-block;
+        flex-basis:36px;
+        font-weight:400;
+        font-size:12px;
+        color:#000;
+        text-align:right;
+    }
+    .desc-box2 {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        flex-basis:100%;
+    }
+    .desc-box2 span {
+        flex-basis:100%;
+        text-align:center;
+    }
+    .desc-box2 .t1 {
+        padding-bottom:5px;
+        font-size:16px;
+        color:#666;
+    }
+    .desc-box2 .t2 {
+        font-weight:400;
+        font-size:26px;
+        color:#009643;
+    }
+    .desc-box2 .t2 em {
+        font-weight:900;
+        font-size:30px;
+        color:#009643;
+    }
+    @-webkit-keyframes bar-motion {
+        0% {width:0;}
+        100% {width:100%;}
+    }
+    div.gray-box {
+        flex-basis:unset;
+        margin-top:10px;
+        padding:10px 60px;
+        background:#f0f0f0;
+        border-radius:18px;
+    }
+    .gray-box p {
+        font-size:16px;
+        color:#000;
+    }
+    .gray-box p span {
+        color:#666;
+    }
+    .gray-box p b {
+        font-weight:900;
+        color:#000;
+    }
+    .notice-txt {
+        margin-top:10px;
+        font-size:12px;
+        color:#666;
+        text-align:center;
+        line-height:1.4em;
+    }
+
+    .point-txt {
+        margin-top:10px;
+        color:#1687e2;
+        text-align:center;
+    }
+    .only-m {
+        display:none;
+    }
+    @media only screen and (max-width: 640px) {
+        .landing-page-wrap {
+            width:100%;
+            height:100%;
+            align-content:center;
+        }
+        .logo-box {
+            position:absolute;
+            top:30px;
+            left:30px;
+        }
+        .page-tit {
+            font-size:40px;
+        }
+        .desc-box {
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+        .only-m {
+            display:block;
+        }
+    }
+</style>
+<div class="wrap">
+    <div class="landing-page-wrap">
+        <a href=#none" class="btn-close only-m">
+            <img src="images/icon-close.png" alt="닫기"/>
+        </a>
+        <div class="logo-box">
+            <img src="images/logo.png" alt="로고"/>
+        </div>
+        <h3 class="page-tit">접속대기중</h3>
+        <div class="desc-box">
+            <span class="t1">동시 접속 고객의 증가로<br class="only-m"> 접속이 지연되고 있습니다.</span>
+            <span class="t2">잠시 기다려주세요</span>
+        </div>
+        <div class="prograss-bar-wrap">
+            <div class="prograss-bar">
+                <!--<div class="bar" style="width:20%"></div>-->
+                <div class="bar"></div>
+            </div>
+            <span class="bar-txt">70%</span>
+        </div>
+        <div class="desc-box2">
+            <span class="t1">예상 대기시간</span>
+            <span class="t2">약 <em>12</em>분 <em>24</em>초</span>
+        </div>
+        <div class="gray-box">
+            <p><span>현재 대기인원</span> : <b>6,678</b>명</p>
+        </div>
+        <p class="notice-txt">ⓘ 새로고침 또는 뒤로가기를 하시면<br class="only-m"> 다시 대기시간이 부여됩니다.</p>
+    </div>
+</div>
+</body>
+</html>
