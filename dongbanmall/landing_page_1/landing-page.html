@@ -44,18 +44,14 @@
     .landing-page-wrap {
         width:630px;
         height: 470px;
-        padding:32px 36px 0; 
+        padding:55px 36px 52px; 
         border:1px solid #ddd;
         background: #fff;
         box-shadow:0 5px 20px rgba(0, 0, 0, 0.3);
     }
 
     .logo-box {
-        max-width:100px;
-    }
-    
-    .logo-box img {
-/*        width:100%;*/
+        text-align: center;
     }
     
     .desc-box {
@@ -64,47 +60,47 @@
     }
     
     .desc-box p:first-child{
-        margin-bottom: 29px;
-        margin-top: -12px;
-        font-size: 2.35em;
+        margin-bottom: 8px;
+        padding-top: 28px;
+        font-size: 32px;
         font-weight: 600;
-    }
-    
-    .desc-box p:nth-child(2){
-        font-size: 1.5em;
-        font-weight: 600;
-        color: #009643;
     }
     
     .desc-box p:last-child{
         margin: -8px;
-        font-size:1.15em;
+        font-size:18px;
         font-weight: 800;
+    }
+    
+    .desc-box span{
+        color: #009643;
     }
     
     .prograss-bar {
         position:relative;
         width: 90%;
         height: 14px;    
-        margin: 41px 11px 0;
+        margin: 50px 11px 0;
         background:#f0f0f0;
         border-radius:50px;
     }
+    
     .prograss-bar .bar {
         position:absolute;
         top:0;
         left:0;
-        width:70%;
+        width:500px;
         height:14px;   
         background: #09ce58;
         border-radius:50px;
-/*        animation:bar-motion  3s linear infinite;*/
+     /* animation:bar-motion  3s linear infinite;*/
     }
     
     .prograss-bar p{
         position: absolute;
-        right: -36px;
-        font-size: 0.8em;
+        left: calc(100% - -8px);
+        padding-top: 1px;
+        font-size:12px;
         font-weight: 800;
     }
 /*
@@ -114,36 +110,37 @@
     }
 */
     .gray-box {
-        padding-top:31px;
+        padding-top:30px;
         text-align: center;
     }
     
     .gray-box p {
         padding-bottom: 6px;
-        font-size:1em;
+        font-size:16px;
+        color: #666;
     }
     
      .gray-box b {
-        font-size: 1.7em;
+        font-size: 26px;
         padding-bottom: 6px;
         font-weight: 400;
         color: #009643;
     }
     
     .gray-box span{
-        font-size: 1.9em;
+        font-size: 30px;
         font-weight: 400;
         color: #009643;
     }
     
     .gray-box em{
-        font-size: 1.9em;
+        font-size: 30px;
         font-weight: 800;
         color: #009643;
     }
   
     .sub_text01 {
-        width: 56%;
+        width: 54%;
         height: 34px;
         border: 1px solid #f0f0f0;
         background: #f0f0f0;
@@ -151,65 +148,69 @@
         line-height: 34px;
         border-radius: 50px;
         margin:0 auto;
-        margin-top: 12px;
+        margin-top: 4px;
         overflow: hidden;
     }
        
     .sub_text01 .sub-title span{
         font-weight: 800;
-        font-size: 1.05em; 
+        font-size: 17px; 
+        color: #009643;
+    }
+    
+    .sub_text01 .sub-title b{
+        font-size: 17px; 
+        font-weight: 600;
         color: #000;
     }
 
     .sub_text01 .sub-title{              
-        font-size: 1.05em;
+        font-size: 17px;
     }
     
     .gray-box .point-txt {
         margin-top:10px;
         color:#666;
         text-align:center;
-        font-size:0.78em;
+        font-size:12px;
     }
     
     @media only screen and (max-width: 640px) {
+        
         .landing-page-wrap {
             width:100%;
             height:100%;
-            padding: 32px 30px 0;
-/*            align-content:center;*/
+            padding: 44px 30px 0;
+          /*align-content:center;*/
         }
-        
+
+        .logo-box{
+            text-align: center;
+        }
+
         .desc-box {
-            margin-top: 56px;
+            margin-top: 9px;
             flex-wrap:wrap;
             justify-content:center;
         }
         
         .desc-box p:first-child{
             margin-bottom: 21px;
-            font-size: 2.54em;
+            font-size: 35px;
             font-weight: 600; 
+            line-height: 44px;
         }
-        
-        .desc-box p:nth-child(2) {
-            width: 242px;
-            margin: 0 auto;
-            font-size: 1.4em;
-            font-weight: 400;
-            color: #009643;
-        }
-        
+
         .desc-box p:last-child {
-            margin: -10px;
-            font-size: 1.15em;
+            margin-top: -21px;
+            font-size: 18px;
             font-weight: 400;
         }
         
         .prograss-bar {
-            width: 79%;
+            width: 82%;
             height: 12px;
-            margin: 46px 15px 0;
+            margin: 46px 12px 0;
             border-radius: 50px;
         }
    
@@ -219,32 +220,52 @@
         }
         
         .prograss-bar p {
+            left: calc(100% - -4px);
             font-weight: 600;
+            font-size: 13px;
+            padding-top: 0px;
         }
         
         .gray-box {
-            padding-top: 23px;
+            padding-top: 25px;
+        }
+        
+        .gray-box b{
+            font-size: 30px;
         }
         
         .gray-box p {
-            font-size: 1.1em;
+            font-size: 17px;
          }
         
         .gray-box em {
-            font-size: 1.7em;
+            font-size: 30px;
         }
         
         .sub_text01 {
-            width: 89%;
+        /* width: 89%;*/
+            width: 270px;
             height: 32px;
             margin-top: 9px; 
             line-height: 30px;  
         }
         
+        .sub_text01 .sub-title {
+            font-size: 17px;
+        }
+        
+        .sub_text01 .sub-title span {
+            font-size: 18px;
+        }
+        
+        .sub_text01 .sub-title b {
+            font-size: 18px;
+        }
+        
         .gray-box .point-txt {
             width: 189px;
             margin: 13px auto;
-            font-size: 0.76em;
+            font-size: 12px;
             line-height: 15px;
         } 
     }
@@ -258,14 +279,13 @@
         </div>
         
         <div class="desc-box">
-                <p>접속대기중</p>
-                <p>동시 접속 고객의 증가로 접속이 지연되고 있습니다.</p><br>
+                <p>동시 접속자가 많아<span> 대기 중</span>입니다.</p><br>
                 <p>잠시 기다려 주세요.</p>
         </div>
         
         <div class="prograss-bar">
-                <span class="bar" style="width: 80%;"></span>
-                <p>70%</p>
+                <span class="bar" style="width: 100%;"></span>
+                <p>100%</p>
 <!--
            <div class="bar" style="width:20%"></div>
             <div class="bar"><p>70%</p></div>
@@ -277,7 +297,7 @@
                 <p><b>약 </b><em>12</em><span>분 </span><em>24</em><span>초</span></p>
                 
             <div class="sub_text01">
-                <p class="sub-title">현재 대기인원: <span>6,678</span>명</p>
+                <p class="sub-title">현재 대기인원 : <span>6,678</span><b>명</b></p>
             </div>
             
             <p class="point-txt">ⓘ 새로고침 또는 뒤로가기를 하시면 다시 대기시간이 부여됩니다.</p>
